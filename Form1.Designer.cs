@@ -202,11 +202,11 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("KTF Jermilov Solid", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(347, 9);
+            this.label4.Location = new System.Drawing.Point(277, 9);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(660, 63);
+            this.label4.Size = new System.Drawing.Size(801, 65);
             this.label4.TabIndex = 6;
             this.label4.Text = "IVANOV VADIM 21VP1 LAB 2 OP.8";
             // 
@@ -740,7 +740,8 @@
         public TextBox textBox1;
         public TextBox textBox2;
         private Panel panel1;
-        private Label label4;
+        private Label label4; 
+
         private Label label3;
         private Button button1;
         private Label label2;

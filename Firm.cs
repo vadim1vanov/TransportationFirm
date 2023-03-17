@@ -8,7 +8,6 @@ using System.Windows.Forms;
 using System.Runtime.InteropServices;
 
 
-
 namespace FirmTranspLAB2
 {
     /// <summary>
