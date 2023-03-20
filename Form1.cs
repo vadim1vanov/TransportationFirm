@@ -230,28 +230,34 @@ namespace FirmTranspLAB2
         {
             string t7 = textBox7.Text;
             void Ex(string s) {
-                if (s.Length == 0)
+                while (true)
                 {
-                    MessageBox.Show("Введите значение!", "Ошибка", MessageBoxButtons.OK,
-                        MessageBoxIcon.Asterisk);
+                    if (s.Length == 0)
+                    {
+                        MessageBox.Show("Введите значение!", "Ошибка", MessageBoxButtons.OK,
+                            MessageBoxIcon.Asterisk);
+                        break;
+                    }
+                    if (firm.CheckOnInt(s))
+                    {
+                        int val = Convert.ToInt32(s);
+                        MessageBox.Show($"Приведение '{val}' к Int32 успешно произведено!", 
+                            "Успех", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                        break;
+                    }
+                    else
+                    {
+                        throw new InvalidCastException("InvalidCastException Op.2", s);
+                    }
                 }
-                if (firm.CheckOnInt(s))
-                {
-                    int val = Convert.ToInt32(s);
-                    MessageBox.Show($"Приведение '{val}' к Int32 успешно произведено!", "Успех", MessageBoxButtons.OK,
-                        MessageBoxIcon.Asterisk);
-                }
-                else
-                {
-                    throw new InvalidCastException("InvalidCastException Op.2", s);
-                } }
+            }
             try
             {
                 Ex(t7);
             }
             catch (InvalidCastException ex)
             {
-                Win32.MessageBox(0, $"Исключение:{ex.Message}.\n\nCтрока '{ex.Value}' не может быть приведена к Int32 ",
+                Win32.MessageBox(0, $"Исключение: {ex.Message}.\n\nCтрока '{ex.Value}' не может быть приведена к Int32 ",
                     "Переопределённое исключение", 0);
 
             }

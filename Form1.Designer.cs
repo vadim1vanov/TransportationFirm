@@ -156,11 +156,11 @@
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(1129, 121);
+            this.label16.Location = new System.Drawing.Point(1025, 125);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(165, 21);
+            this.label16.Size = new System.Drawing.Size(318, 21);
             this.label16.TabIndex = 28;
-            this.label16.Text = "© Ivanov Vadim 2023";
+            this.label16.Text = "© Ivanov Vadim  && Golovinov Mikhail 2023";
             this.label16.Click += new System.EventHandler(this.label16_Click);
             // 
             // button10
@@ -204,11 +204,11 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("KTF Jermilov Solid", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(347, 9);
+            this.label4.Location = new System.Drawing.Point(118, 9);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(660, 63);
+            this.label4.Size = new System.Drawing.Size(1118, 63);
             this.label4.TabIndex = 6;
-            this.label4.Text = "IVANOV VADIM 21VP1 LAB 2 OP.8";
+            this.label4.Text = "IVANOV VADIM && GOLOVINOV MIKHAIL 21VP1 LAB 2 OP.8";
             // 
             // label3
             // 

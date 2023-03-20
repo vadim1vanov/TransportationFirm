@@ -243,7 +243,6 @@ namespace FirmTranspLAB2
         /// <returns></returns>
         public string hexNumber(string field, string value)
         {
-            Form1 form1 = new Form1();
             if (field.Length == 0) return "Введите название поля!";
             switch (field) {
                 case "money":
@@ -397,6 +396,7 @@ namespace FirmTranspLAB2
         /// <returns></returns>
         public string ChangeField(string fieldOpt, string value)
         {
+            if (fieldOpt.Length == 0) return "Введите название поля!";
             switch(fieldOpt){
                 case "Money":
                     if (CheckOnDouble(value))
@@ -512,7 +512,7 @@ namespace FirmTranspLAB2
                     }
                     else return "Введите значение корректно в соответствии с типом данных!";
                 default:
-                    return "Введите название поля!";
+                    return "Введите название поля корректно!";
                 }
             }
     }
