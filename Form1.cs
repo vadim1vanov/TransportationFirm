@@ -1,12 +1,13 @@
 using System.Net.Sockets;
 using System.Runtime.InteropServices;
+using System.Collections;
 
 namespace FirmTranspLAB2
 {
     // форма
     public partial class Form1  : Form
     {
-        
+       
         Firm firm = new Firm("Tesla");
         Firm firm2 = new Firm("Skoda", 15000);
         Firm firm1 = new Firm(14000, 2000, "TOYOTAAA", 5000, 15000, "Skoda", 3650);
@@ -16,22 +17,39 @@ namespace FirmTranspLAB2
             InitializeComponent();
             Text = "FirmTransportation";
             this.StartPosition = FormStartPosition.CenterScreen;
-            
-
-
-
-
+            this.WindowState = FormWindowState.Maximized;
 
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+            comboBox1.Items.Add("Цена автомобиля");
+            comboBox1.Items.Add("Масса автомобиля");
+            comboBox1.Items.Add("Название фирмы");
+            comboBox1.Items.Add("Количество автомобилей");
+            comboBox1.Items.Add("Количество работников");
+            comboBox1.Items.Add("Бренд автомобилей");
+            comboBox1.Items.Add("Количество грузоперевозок");
+
+            comboBox2.Items.Add("Цена автомобиля");
+            comboBox2.Items.Add("Масса автомобиля");
+            comboBox2.Items.Add("Название фирмы");
+            comboBox2.Items.Add("Количество автомобилей");
+            comboBox2.Items.Add("Количество работников");
+            comboBox2.Items.Add("Бренд автомобилей");
+            comboBox2.Items.Add("Количество грузоперевозок");
+
+            comboBox3.Items.Add("Цена автомобиля");
+            comboBox3.Items.Add("Масса автомобиля");
+            comboBox3.Items.Add("Количество автомобилей");
+            comboBox3.Items.Add("Количество работников");
+            comboBox3.Items.Add("Количество грузоперевозок");
+
         }
      
         private void button1_Click(object sender, EventArgs e)
         {
-            string writeRealize = firm1.writeFunc(textBox1.Text);
+            string writeRealize = firm1.writeFunc(comboBox2.Text);
             MessageBox.Show($"Вывод значения поля: \n\n{writeRealize}", "Вывод через метод", MessageBoxButtons.OK,
                 MessageBoxIcon.Asterisk);
 
@@ -100,7 +118,7 @@ namespace FirmTranspLAB2
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            string hex = firm1.hexNumber(textBox2.Text, textBox5.Text);
+            string hex = firm1.hexNumber(comboBox3.Text, textBox5.Text);
 
             MessageBox.Show($"Шестнадцатеричное представление: \n\n{hex}", "Шестнадцатеричное представление поля", 
                 MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
@@ -154,7 +172,7 @@ namespace FirmTranspLAB2
 
         private void button8_Click(object sender, EventArgs e)
         {
-            string changeF = firm1.ChangeField(textBox3.Text, textBox4.Text);
+            string changeF = firm1.ChangeField(comboBox1.Text, textBox4.Text);
             MessageBox.Show($"Изменение полей: \n\n{changeF}\n\n{firm1}", "Переопределение полей класса", MessageBoxButtons.OK,
                 MessageBoxIcon.Asterisk);
         }
@@ -201,8 +219,8 @@ namespace FirmTranspLAB2
                     try
                     {
                         Firm firmEx = new Firm("Tesla", value);
-                        MessageBox.Show($"Конструктор успешно создан: {firmEx}", "Успех", MessageBoxButtons.OK,
-                        MessageBoxIcon.Asterisk);
+                        MessageBox.Show($"Объект успешно создан: {firmEx}\nМинимальное количество автомобилей: 50", "Успех", 
+                            MessageBoxButtons.OK,MessageBoxIcon.Asterisk);
                         break;
                     }
                     catch (NewException ex)
@@ -280,6 +298,50 @@ namespace FirmTranspLAB2
 
         private void label4_Click(object sender, EventArgs e)
         {
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string selectedState = comboBox1.SelectedItem.ToString();
+           
+
+            
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string selectedState = comboBox2.SelectedItem.ToString();
+        }
+
+        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string selectedState = comboBox3.SelectedItem.ToString();
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            
+                NewCollection collection = new NewCollection();
+                CollectionListeners listener = new CollectionListeners(collection);
+                string k1 = collection.PushCollect(textBox1.Text);
+                string k2 = collection.Push();
+                string k3 = collection.Pop().ToString();
+                MessageBox.Show(k1);
+                MessageBox.Show(k2);
+                MessageBox.Show(k3);
+
+
+            
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged_4(object sender, EventArgs e)
+        {
+
         }
     }
 }

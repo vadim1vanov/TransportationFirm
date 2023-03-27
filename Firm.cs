@@ -1,10 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Collections;
 using System.Linq;
 using System.Text;
+using System.Diagnostics;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Runtime.InteropServices;
 
 
@@ -25,7 +25,7 @@ namespace FirmTranspLAB2
         private int countTransp;
         static public int countObjects;
 
-        public static int CountObjects { get { return countObjects; } }
+        
 
         public double Money
         {
@@ -193,45 +193,25 @@ namespace FirmTranspLAB2
         /// <returns></returns>
         public string writeFunc(string fieldWrite)
         {
-
-            while (true)
-            {
-                if (fieldWrite.Length == 0) return "Введите название поля!";
                 switch (fieldWrite)
                 {
-                    case "Money":
+                    case "Цена автомобиля":
                         return $"Цена автомобиля через метод: {Money}";
-                    case "money":
-                        return $"Цена автомобиля через метод: {Money}";
-                    case "Mas":
+                    case "Масса автомобиля":
                         return $"Значение массы через метод: {Mas}";
-                    case "mas":
-                        return $"Значение массы через метод: {Mas}";
-                    case "FirmName":
+                    case "Название фирмы":
                         return $"Название фирмы через метод: {FirmName}";
-                    case "firmName":
-                        return $"Название фирмы через метод: {FirmName}";
-                    case "CountCar":
+                    case "Количество автомобилей":
                         return $"Количество автомобилей через метод: {CountCar}";
-                    case "countCar":
-                        return $"Количество автомобилей через метод: {CountCar}";
-                    case "CountWorker":
+                    case "Количество работников":
                         return $"Количество работников через метод: {CountWorker}";
-                    case "countWorker":
-                        return $"Количество работников через метод: {CountWorker}";
-                    case "CarBrand":
+                    case "Бренд автомобилей":
                         return $"Бренд автомобилей через метод: {CarBrand}";
-                    case "carBrand":
-                        return $"Бренд автомобилей через метод: {CarBrand}";
-                    case "CountTransp":
+                    case "Количество грузоперевозок":
                         return $"Количество перевозок в год через метод: {CountTransp}";
-                    case "countTransp":
-                        return $"Количество перевозок в год через метод: {CountTransp}";
-
                     default:
-                        return "Введите название поля корректно!";
-                }
-            }
+                        return "Выберите поле!";
+                } 
         }
         
 
@@ -243,57 +223,56 @@ namespace FirmTranspLAB2
         /// <returns></returns>
         public string hexNumber(string field, string value)
         {
-            if (field.Length == 0) return "Введите название поля!";
-            switch (field) {
-                case "money":
-                    if (CheckOnDouble(value))
-                    {
-                        double doubleValue = Convert.ToDouble(value);
-                        Money = doubleValue;
-                        return DoubleToHex(doubleValue, 16);
-                    }
-                    else return "Введите значение корректно в соответствии с типом данных!";
-                case "Money":
-                    if (CheckOnDouble(value))
-                    {
-                        double doubleValue = Convert.ToDouble(value);
-                        Money = doubleValue;
-                        return DoubleToHex(doubleValue, 16);
-                    }
-                    else return "Введите значение корректно в соответствии с типом данных!";
+            if(CheckOnDouble(value) == true)
+            {
                 
-                case "mas":
-                    int intValue = Convert.ToInt32(value);
-                    Mas = intValue;
-                    return "Mas: " + Convert.ToString(intValue, 16);
-                case "Mas":
-                    intValue = Convert.ToInt32(value);
-                    Mas = intValue;
-                    return "Mas: " + Convert.ToString(intValue, 16);
-                case "countWorker":
-                    intValue = Convert.ToInt32(value);
-                    CountWorker = intValue;
-                    return "CountWorker: " + Convert.ToString(intValue, 16);
-                case "CountWorker":
-                    intValue = Convert.ToInt32(value);
-                    CountWorker = intValue;
-                    return "CountWorker: " + Convert.ToString(intValue, 16);
-                case "countCar":
-                    intValue = Convert.ToInt32(value);
-                    CountCar = intValue;
-                    return "CountWorker: " + Convert.ToString(intValue, 16);
-                case "CountCar":
-                    intValue = Convert.ToInt32(value);
-                    CountCar = intValue;
-                    return "CountWorker: " + Convert.ToString(intValue, 16);
-                case "countTransp":
-                    intValue = Convert.ToInt32(value);
-                    CountTransp = intValue;
-                    return "CountWorker: " + Convert.ToString(intValue, 16);
-                case "CountTransp":
-                    intValue = Convert.ToInt32(value);
-                    CountTransp = intValue;
-                    return "CountWorker: " + Convert.ToString(intValue, 16);
+                if (Convert.ToDouble(value) < 0) return "Введите корректное значение!";
+            }
+            if(CheckOnInt(value) == true)
+            {
+                if (Convert.ToInt32(value) < 0) return "Введите корректное значение!";
+            }
+            switch (field) {
+                case "Цена автомобиля":
+                    if (CheckOnDouble(value))
+                    {
+                        double doubleValue = Convert.ToDouble(value);
+                        Money = doubleValue;
+                        return DoubleToHex(doubleValue, 16);
+                    }
+                    else return "Введите корректное значение!";
+                case "Масса автомобиля":
+                    if (CheckOnInt(value))
+                    {
+                        int intValue1 = Convert.ToInt32(value);
+                        Mas = intValue1;
+                        return "Масса автомобиля: " + Convert.ToString(intValue1, 16);
+                    }
+                    else return "Введите корректное значение!";
+                case "Количество работников":
+                    if (CheckOnInt(value))
+                    {
+                        int intValue = Convert.ToInt32(value);
+                        CountWorker = intValue;
+                        return "Количество работников: " + Convert.ToString(intValue, 16);
+                    }
+                    else return "Введите корректное значение!";
+                case "Количество автомобилей":
+                    if (CheckOnInt(value))
+                    {
+                        int intValue = Convert.ToInt32(value);
+                        CountCar = intValue;
+                        return "Количество автомобилей: " + Convert.ToString(intValue, 16);
+                    }
+                    else return "Введите корректное значение!";
+                case "Количество грузоперевозок":
+                    if (CheckOnInt(value))
+                    { 
+                        int intValue = Convert.ToInt32(value);
+                        CountTransp = intValue;
+                        return "Количество грузоперевозок: " + Convert.ToString(intValue, 16);
+                    }
+                    else return "Введите корректное значение!";
                 default:
                     return "Введите название поля корректно!";
             }
@@ -348,7 +327,7 @@ namespace FirmTranspLAB2
             char point = '.';
             if (value == null) return false;
             if (value.IndexOf(point) != -1) { return false; }
-            string pattern = "[+-]?([0-9]*)?(,?[0-9])";
+            string pattern = "^([0-9]*)?(,?[0-9]*)$";
             while (!Regex.IsMatch(value, pattern))
             {
                 return false;
@@ -398,121 +377,64 @@ namespace FirmTranspLAB2
         {
             if (fieldOpt.Length == 0) return "Введите название поля!";
             switch(fieldOpt){
-                case "Money":
+                case "Цена автомобиля":
                     if (CheckOnDouble(value))
                     {
                         double doubleValue = Convert.ToDouble(value);
                         Money = doubleValue;
                         return Money.ToString();
                     }
-                    else return "Введите значение корректно в соответствии с типом данных!";
-                case "money":
-                    if (CheckOnDouble(value))
-                    {
-                        double doubleValue = Convert.ToDouble(value);
-                        Money = doubleValue;
-                        return Money.ToString();
-                    }
-                    
-                    else return "Введите значение корректно в соответствии с типом данных!";
-                case "Mas":
+                    else return "Введите корректное значение!";
+                case "Масса автомобиля":
                     if (CheckOnInt(value))
                     {
                         int intValue = Convert.ToInt32(value);
                         Mas = intValue;
                         return Mas.ToString();
                     }
-                    else return "Введите значение корректно в соответствии с типом данных!";
-                case "mas":
-                    if (CheckOnInt(value))
-                    {
-                        int intValue = Convert.ToInt32(value);
-                        Mas = intValue;
-                        return Mas.ToString();
-                    }
-                    else return "Введите значение корректно в соответствии с типом данных!";
-                case "FirmName":
+                    else return "Введите корректное значение!";
+                case "Название фирмы":
                     if (CheckOnString(value))
                     {
                         string strValue = value;
                         FirmName = strValue;
                         return FirmName;
                     }
-                    else return "Введите значение корректно в соответствии с типом данных!";
-                case "firmName":
-                    if (CheckOnString(value))
-                    {
-                        string strValue = value;
-                        FirmName = strValue;
-                        return FirmName;
-                    }
-                    else return "Введите значение корректно в соответствии с типом данных!";
-                case "CountWorker":
+                    else return "Введите корректное значение!";
+                case "Количество работников":
                     if (CheckOnInt(value))
                     {
                         int intValue = Convert.ToInt32(value);
                         CountWorker = intValue;
                         return CountWorker.ToString();
                     }
-                    else return "Введите значение корректно в соответствии с типом данных!";
-                case "countWorker":
-                    if (CheckOnInt(value))
-                    {
-                        int intValue = Convert.ToInt32(value);
-                        CountWorker = intValue;
-                        return CountWorker.ToString();
-                    }
-                    else return "Введите значение корректно в соответствии с типом данных!";
-                case "CountCar":
+                    else return "Введите корректное значение!"; 
+                case "Количество автомобилей":
                     if (CheckOnInt(value))
                     {
                         int intValue = Convert.ToInt32(value);
                         CountCar = intValue;
                         return CountCar.ToString();
                     }
-                    else return "Введите значение корректно в соответствии с типом данных!";
-                case "countCar":
-                    if (CheckOnInt(value))
-                    {
-                        int intValue = Convert.ToInt32(value);
-                        CountCar = intValue;
-                        return CountCar.ToString();
-                    }
-                    else return "Введите значение корректно в соответствии с типом данных!";
-                case "CarBrand":
+                    else return "Введите корректное значение!";
+                case "Бренд автомобилей":
                     if (CheckOnString(value))
                     {
                         string strValue = value;
                         CarBrand = strValue;
                         return CarBrand;
                     }
-                    else return "Введите значение корректно в соответствии с типом данных!";
-                case "carBrand":
-                    if (CheckOnString(value))
-                    {
-                        string strValue = value;
-                        CarBrand = strValue;
-                        return CarBrand;
-                    }
-                    else return "Введите значение корректно в соответствии с типом данных!";
-                case "CountTransp":
+                    else return "Введите корректное значение!";
+                case "Количество грузоперевозок":
                     if (CheckOnInt(value))
                     {
                         int intValue = Convert.ToInt32(value);
                         CountTransp = intValue;
                         return CountTransp.ToString();
                     }
-                    else return "Введите значение корректно в соответствии с типом данных!";
-                case "countTransp":
-                    if (CheckOnInt(value))
-                    { 
-                        int intValue = Convert.ToInt32(value);
-                        CountTransp = intValue;
-                        return CountTransp.ToString();
-                    }
-                    else return "Введите значение корректно в соответствии с типом данных!";
+                    else return "Введите корректное значение!";
                 default:
-                    return "Введите название поля корректно!";
+                    return "Выберите поле!";
                 }
             }
     }
@@ -553,4 +475,93 @@ namespace FirmTranspLAB2
             Value = val;
         }
     }
+
+
+    
+
+    //===================================================================================
+
+    public delegate void NewCollectionChanged(object sender, EventArgs e);
+    class NewCollection
+    {
+        public Stopwatch stopwatch = new Stopwatch();
+        public event NewCollectionChanged Notify;
+        public Stack stack = new Stack();
+        const int n = 5;
+        Firm firm = new Firm("Tesla");
+        Firm firm2 = new Firm("Skoda", 15000);
+        Firm firm1 = new Firm(14000, 2000, "TOYOTAAA", 5000, 15000, "Skoda", 3650);
+
+        public string PushCollect(string s)
+        {
+            stack.Push(firm);
+            stack.Push(firm1);
+            stack.Push(firm2);
+            stack.Push(s);
+
+            string result = "";
+            foreach (var item in stack)
+            {
+                result += $"Elem in stack: {item}\n";
+            }
+            return result;
+
+        }
+
+        public string Push()
+        {
+            stopwatch.Start();
+            for (int i = 0; i < n; i++)
+            {
+
+                stack.Push(i);
+                
+
+            }
+            string result = "";
+            foreach (var item in stack)
+            {
+                result += $"Elem in stack: {item}\n";
+
+            }
+            stopwatch.Stop();
+            return result;
+
+        }
+
+        public object Pop()
+        {
+            stack.Pop();
+            Notify?.Invoke(this, EventArgs.Empty);
+            string result = "";
+            foreach (var item in stack)
+            {
+                result += $"Elem in stack: {item}\n";
+                
+            }
+            return result;
+        }
+
+
+        public void CollectionChange(EventArgs e)
+        {
+            Notify?.Invoke(this, e);
+        }
+    }
+
+    class CollectionListeners
+    {
+        NewCollection collection;
+        public CollectionListeners(NewCollection collection)
+        {
+            this.collection = collection;
+            collection.Notify += CollectionHandler;
+        }
+        
+        public void CollectionHandler(object sender, EventArgs e)
+        {
+            MessageBox.Show("Изменение в stack: ");
+        }
+    }
+
 }
