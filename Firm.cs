@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Diagnostics;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Runtime.InteropServices;
+
 
 
 
@@ -477,72 +479,112 @@ namespace FirmTranspLAB2
     }
 
 
-    
-
-    //===================================================================================
+   
 
     public delegate void NewCollectionChanged(object sender, EventArgs e);
     class NewCollection
     {
+        Random rand = new Random();
         public Stopwatch stopwatch = new Stopwatch();
         public event NewCollectionChanged Notify;
         public Stack stack = new Stack();
-        const int n = 5;
+        public Stack stack2 = new Stack();
+        public Stack stack3 = new Stack();
+        const int n = 100_000;
+        public int[] array = new int[n];
+        public Firm[] firmsArray = new Firm[n];
+        public Stack<Firm> firmsStack = new Stack<Firm>();
+        public int[] array2 = new int[n];
         Firm firm = new Firm("Tesla");
         Firm firm2 = new Firm("Skoda", 15000);
         Firm firm1 = new Firm(14000, 2000, "TOYOTAAA", 5000, 15000, "Skoda", 3650);
 
-        public string PushCollect(string s)
+        public string PushArrayTest()
         {
-            stack.Push(firm);
-            stack.Push(firm1);
-            stack.Push(firm2);
-            stack.Push(s);
-
-            string result = "";
-            foreach (var item in stack)
+            Firm[] firmsForPush = new Firm[n];
+            for (int i = 0; i < n; i++)
             {
-                result += $"Elem in stack: {item}\n";
+                firmsForPush[i] = new Firm($"{i + 1}");
             }
-            return result;
-
-        }
-
-        public string Push()
-        {
+            stopwatch.Reset();
             stopwatch.Start();
             for (int i = 0; i < n; i++)
             {
-
-                stack.Push(i);
-                
-
-            }
-            string result = "";
-            foreach (var item in stack)
-            {
-                result += $"Elem in stack: {item}\n";
-
+                firmsArray[i] = firmsForPush[i];
             }
             stopwatch.Stop();
-            return result;
-
+            return $"Mc 1: {stopwatch.ElapsedMilliseconds}";
         }
-
-        public object Pop()
+        public string PushStackTest()
         {
-            stack.Pop();
-            Notify?.Invoke(this, EventArgs.Empty);
+            Firm[] firmsForPush = new Firm[n];
+            for (int i = 0; i < n; i++)
+            {
+                firmsForPush[i] = new Firm($"{i + 1}");
+            }
+            stopwatch.Reset();
+            stopwatch.Start();
+            for (int i = 0; i < n; i++)
+            {
+                firmsStack.Push(firmsForPush[i]);
+            }
+            stopwatch.Stop();
+            return $"Mc 2: {stopwatch.ElapsedMilliseconds}";
+        }
+        public string MyCollection()
+        {
+            stack.Push(firm.ToString());
+            stack.Push(firm1.ToString());
+            stack.Push(firm2.ToString());
             string result = "";
             foreach (var item in stack)
             {
                 result += $"Elem in stack: {item}\n";
-                
             }
             return result;
         }
 
+        /// <summary>
+        /// функция добавляет элемент в стек
+        /// </summary>
+        /// <param name="s">аргумент, который будет добавлен в стек</param>
+        /// <returns></returns>
+        public string PushCollect(string s)
+        {
+            stopwatch.Start();
+            stack.Push(s);
+            Notify?.Invoke(this, EventArgs.Empty);
+            stopwatch.Stop();
+            return $"Mc: {stopwatch.ElapsedMilliseconds}";
 
+        }
+        
+        
+        
+       
+
+        /// <summary>
+        /// функция извлекает первый элемент из стека 
+        /// </summary>
+        /// <returns></returns>
+        public object Pop()
+        {
+            if (stack.Count > 0)
+            {
+                stack.Pop();
+                Notify?.Invoke(this, EventArgs.Empty);
+                string result = "";
+                foreach (var item in stack)
+                {
+                    result += $"Elem in stack: {item}\n";
+
+                }
+                return result;
+            }
+            else return "Стек пуст!";
+        }
+
+        
         public void CollectionChange(EventArgs e)
         {
             Notify?.Invoke(this, e);
@@ -560,8 +602,58 @@ namespace FirmTranspLAB2
         
         public void CollectionHandler(object sender, EventArgs e)
         {
-            MessageBox.Show("Изменение в stack: ");
+            MessageBox.Show("Изменение в Stack: ", "Событие", MessageBoxButtons.OK,
+                    MessageBoxIcon.Asterisk);
         }
     }
 
+
+    public class CollectionType<T>
+    {
+        private List<T> elements;
+
+        public CollectionType()
+        {
+            elements = new List<T>();
+        }
+
+        public void AddElement(T element)
+        {
+            elements.Add(element);
+        }
+
+        public void RemoveElement(T element)
+        {
+            elements.Remove(element);
+        }
+
+        public void Clear()
+        {
+            elements.Clear();
+        }
+
+        public int Count
+        {
+            get { return elements.Count; }
+        }
+
+        public T this[int index]
+        {
+            get { return elements[index]; }
+            set { elements[index] = value; }
+        }
+
+        public void PrintElements()
+        {
+            foreach (T element in elements)
+            {
+                Console.WriteLine(element);
+            }
+        }
+
+        ~CollectionType()
+        {
+            elements = null;
+        }
+    }
 }

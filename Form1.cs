@@ -1,6 +1,9 @@
 using System.Net.Sockets;
 using System.Runtime.InteropServices;
 using System.Collections;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Drawing;
 
 namespace FirmTranspLAB2
 {
@@ -12,13 +15,17 @@ namespace FirmTranspLAB2
         Firm firm2 = new Firm("Skoda", 15000);
         Firm firm1 = new Firm(14000, 2000, "TOYOTAAA", 5000, 15000, "Skoda", 3650);
         Firm firm3 = new Firm();
+        static NewCollection collection = new NewCollection();
+        CollectionListeners listener = new CollectionListeners(collection);
+        
+
         public Form1()
         {
             InitializeComponent();
             Text = "FirmTransportation";
             this.StartPosition = FormStartPosition.CenterScreen;
             this.WindowState = FormWindowState.Maximized;
-
+            collection.MyCollection();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -44,6 +51,16 @@ namespace FirmTranspLAB2
             comboBox3.Items.Add("Количество автомобилей");
             comboBox3.Items.Add("Количество работников");
             comboBox3.Items.Add("Количество грузоперевозок");
+
+            listView1.GridLines = true;
+            listView1.View = View.Details;
+            
+            listView1.Columns.Add("Вставка Array", 160, HorizontalAlignment.Center);
+            listView1.Columns.Add("Вставка Stack", 160, HorizontalAlignment.Center);
+           // listView1.Columns.Add("Выборка Array Послед", 160, HorizontalAlignment.Center);
+            //listView1.Columns.Add("Выборка Array Случ", 160, HorizontalAlignment.Center);
+            //listView1.Columns.Add("Выборка Stack Послед", 160, HorizontalAlignment.Center);
+            //listView1.Columns.Add("Выборка Stack Случ", 160, HorizontalAlignment.Center);
 
         }
      
@@ -320,15 +337,15 @@ namespace FirmTranspLAB2
 
         private void button13_Click(object sender, EventArgs e)
         {
-            
-                NewCollection collection = new NewCollection();
-                CollectionListeners listener = new CollectionListeners(collection);
-                string k1 = collection.PushCollect(textBox1.Text);
-                string k2 = collection.Push();
-                string k3 = collection.Pop().ToString();
-                MessageBox.Show(k1);
-                MessageBox.Show(k2);
-                MessageBox.Show(k3);
+             
+            collection.PushCollect(textBox1.Text);
+            string result = "";
+            foreach (var item2 in collection.stack)
+            {
+                result += $"Elem in stack: {item2}\n";
+            }   
+                MessageBox.Show(result, "Добавление элементов в стек", MessageBoxButtons.OK,
+                    MessageBoxIcon.Asterisk);
 
 
             
@@ -340,6 +357,44 @@ namespace FirmTranspLAB2
         }
 
         private void textBox1_TextChanged_4(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+
+            
+            MessageBox.Show(collection.Pop().ToString(), "Удаление элементов стека", MessageBoxButtons.OK,
+                    MessageBoxIcon.Asterisk);
+            
+        }
+
+        private void listView1_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            
+            
+            
+            ListViewItem item = new ListViewItem(collection.PushArrayTest());
+            item.SubItems.Add(collection.PushStackTest());
+            
+            
+            // Добавление элемента в ListView
+            listView1.Items.Add(item);
+
+        }
+
+        private void listBox1_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listView1_SelectedIndexChanged_2(object sender, EventArgs e)
         {
 
         }

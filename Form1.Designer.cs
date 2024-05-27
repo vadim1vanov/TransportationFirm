@@ -77,8 +77,14 @@
             this.panel12 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.button13 = new System.Windows.Forms.Button();
-            this.listView1 = new System.Windows.Forms.ListView();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.label17 = new System.Windows.Forms.Label();
+            this.button14 = new System.Windows.Forms.Button();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.label18 = new System.Windows.Forms.Label();
+            this.button15 = new System.Windows.Forms.Button();
+            this.listView1 = new System.Windows.Forms.ListView();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -642,10 +648,10 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(793, 45);
+            this.button2.Location = new System.Drawing.Point(827, 32);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(186, 63);
+            this.button2.Size = new System.Drawing.Size(174, 54);
             this.button2.TabIndex = 2;
             this.button2.Text = "ВЫЙТИ";
             this.button2.UseVisualStyleBackColor = false;
@@ -661,9 +667,9 @@
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button9.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button9.ForeColor = System.Drawing.Color.Transparent;
-            this.button9.Location = new System.Drawing.Point(25, 102);
+            this.button9.Location = new System.Drawing.Point(151, 30);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(152, 48);
+            this.button9.Size = new System.Drawing.Size(112, 62);
             this.button9.TabIndex = 9;
             this.button9.Text = "Количество созданных объектов";
             this.button9.UseVisualStyleBackColor = false;
@@ -679,9 +685,9 @@
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button10.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button10.ForeColor = System.Drawing.Color.White;
-            this.button10.Location = new System.Drawing.Point(25, 10);
+            this.button10.Location = new System.Drawing.Point(22, 30);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(152, 80);
+            this.button10.Size = new System.Drawing.Size(112, 62);
             this.button10.TabIndex = 20;
             this.button10.Text = "Посмотреть наименования полей класса";
             this.button10.UseVisualStyleBackColor = false;
@@ -694,7 +700,7 @@
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(1507, 132);
+            this.label16.Location = new System.Drawing.Point(1507, 79);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(318, 21);
             this.label16.TabIndex = 28;
@@ -710,9 +716,9 @@
             this.panel1.Controls.Add(this.button10);
             this.panel1.Controls.Add(this.button9);
             this.panel1.Controls.Add(this.button2);
-            this.panel1.Location = new System.Drawing.Point(0, 838);
+            this.panel1.Location = new System.Drawing.Point(0, 891);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1828, 168);
+            this.panel1.Size = new System.Drawing.Size(1828, 115);
             this.panel1.TabIndex = 5;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -734,9 +740,9 @@
             this.label13.ForeColor = System.Drawing.Color.White;
             this.label13.Location = new System.Drawing.Point(68, 661);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(195, 21);
+            this.label13.Size = new System.Drawing.Size(263, 21);
             this.label13.TabIndex = 31;
-            this.label13.Text = "Вывод элементов Stack";
+            this.label13.Text = "Добавить элемент в коллекцию";
             // 
             // button13
             // 
@@ -757,25 +763,110 @@
             this.button13.UseVisualStyleBackColor = false;
             this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
-            // listView1
-            // 
-            this.listView1.Location = new System.Drawing.Point(51, 719);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(293, 29);
-            this.listView1.TabIndex = 34;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
-            // 
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.SystemColors.Info;
             this.textBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(311, 656);
+            this.textBox1.Location = new System.Drawing.Point(349, 655);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(182, 29);
             this.textBox1.TabIndex = 35;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged_4);
+            // 
+            // panel13
+            // 
+            this.panel13.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel13.BackColor = System.Drawing.Color.LightCoral;
+            this.panel13.Location = new System.Drawing.Point(47, 744);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(1723, 3);
+            this.panel13.TabIndex = 37;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.Transparent;
+            this.label17.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label17.ForeColor = System.Drawing.Color.White;
+            this.label17.Location = new System.Drawing.Point(68, 714);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(210, 21);
+            this.label17.TabIndex = 36;
+            this.label17.Text = "Удалить элемент из стека";
+            // 
+            // button14
+            // 
+            this.button14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button14.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.button14.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button14.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button14.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MidnightBlue;
+            this.button14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue;
+            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button14.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button14.ForeColor = System.Drawing.Color.White;
+            this.button14.Location = new System.Drawing.Point(1639, 707);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(113, 32);
+            this.button14.TabIndex = 39;
+            this.button14.Text = "Выполнить";
+            this.button14.UseVisualStyleBackColor = false;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
+            // 
+            // panel14
+            // 
+            this.panel14.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel14.BackColor = System.Drawing.Color.LightCoral;
+            this.panel14.Location = new System.Drawing.Point(51, 882);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(1723, 3);
+            this.panel14.TabIndex = 41;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.BackColor = System.Drawing.Color.Transparent;
+            this.label18.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label18.ForeColor = System.Drawing.Color.White;
+            this.label18.Location = new System.Drawing.Point(68, 811);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(381, 21);
+            this.label18.TabIndex = 40;
+            this.label18.Text = "Вывод замера производительности на вставку";
+            // 
+            // button15
+            // 
+            this.button15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button15.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.button15.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button15.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button15.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MidnightBlue;
+            this.button15.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue;
+            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button15.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button15.ForeColor = System.Drawing.Color.White;
+            this.button15.Location = new System.Drawing.Point(1639, 800);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(113, 32);
+            this.button15.TabIndex = 42;
+            this.button15.Text = "Выполнить";
+            this.button15.UseVisualStyleBackColor = false;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
+            // 
+            // listView1
+            // 
+            this.listView1.BackColor = System.Drawing.SystemColors.Info;
+            this.listView1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.listView1.Location = new System.Drawing.Point(480, 753);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(959, 123);
+            this.listView1.TabIndex = 43;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.List;
+            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged_2);
             // 
             // Form1
             // 
@@ -783,8 +874,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Crimson;
             this.ClientSize = new System.Drawing.Size(1827, 1000);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.listView1);
+            this.Controls.Add(this.button15);
+            this.Controls.Add(this.panel14);
+            this.Controls.Add(this.label18);
+            this.Controls.Add(this.button14);
+            this.Controls.Add(this.panel13);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button13);
             this.Controls.Add(this.panel12);
             this.Controls.Add(this.label13);
@@ -891,7 +988,13 @@
         private Panel panel12;
         private Label label13;
         private Button button13;
-        private ListView listView1;
         public TextBox textBox1;
+        private Panel panel13;
+        private Label label17;
+        private Button button14;
+        private Panel panel14;
+        private Label label18;
+        private Button button15;
+        private ListView listView1;
     }
 }
