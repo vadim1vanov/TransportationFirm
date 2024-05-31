@@ -848,7 +848,7 @@
             label16.BackColor = Color.Transparent;
             label16.Font = new Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point);
             label16.ForeColor = Color.White;
-            label16.Location = new Point(1118, 107);
+            label16.Location = new Point(1144, 107);
             label16.Name = "label16";
             label16.Size = new Size(82, 13);
             label16.TabIndex = 44;
@@ -859,9 +859,9 @@
             // 
             panel15.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             panel15.BackColor = Color.LightCoral;
-            panel15.Location = new Point(1051, 140);
+            panel15.Location = new Point(1124, 140);
             panel15.Name = "panel15";
-            panel15.Size = new Size(723, 3);
+            panel15.Size = new Size(623, 3);
             panel15.TabIndex = 45;
             // 
             // button16
@@ -875,7 +875,7 @@
             button16.FlatStyle = FlatStyle.Flat;
             button16.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             button16.ForeColor = Color.White;
-            button16.Location = new Point(1516, 96);
+            button16.Location = new Point(1592, 96);
             button16.Name = "button16";
             button16.Size = new Size(113, 32);
             button16.TabIndex = 46;
