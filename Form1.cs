@@ -8,16 +8,16 @@ using System.Drawing;
 namespace FirmTranspLAB2
 {
     // форма
-    public partial class Form1  : Form
+    public partial class Form1 : Form
     {
-       
+
         Firm firm = new Firm("Tesla");
         Firm firm2 = new Firm("Skoda", 15000);
         Firm firm1 = new Firm(14000, 2000, "TOYOTAAA", 5000, 15000, "Skoda", 3650);
         Firm firm3 = new Firm();
         static NewCollection collection = new NewCollection();
         CollectionListeners listener = new CollectionListeners(collection);
-        
+
 
         public Form1()
         {
@@ -54,16 +54,14 @@ namespace FirmTranspLAB2
 
             listView1.GridLines = true;
             listView1.View = View.Details;
-            
+
             listView1.Columns.Add("Вставка Array", 160, HorizontalAlignment.Center);
             listView1.Columns.Add("Вставка Stack", 160, HorizontalAlignment.Center);
-           // listView1.Columns.Add("Выборка Array Послед", 160, HorizontalAlignment.Center);
-            //listView1.Columns.Add("Выборка Array Случ", 160, HorizontalAlignment.Center);
-            //listView1.Columns.Add("Выборка Stack Послед", 160, HorizontalAlignment.Center);
-            //listView1.Columns.Add("Выборка Stack Случ", 160, HorizontalAlignment.Center);
+            listView1.Columns.Add("Случаный порядок", 160, HorizontalAlignment.Center);
+            
 
         }
-     
+
         private void button1_Click(object sender, EventArgs e)
         {
             string writeRealize = firm1.writeFunc(comboBox2.Text);
@@ -100,7 +98,7 @@ namespace FirmTranspLAB2
 
         private void label1_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void textBox2_TextChanged_1(object sender, EventArgs e)
@@ -137,9 +135,9 @@ namespace FirmTranspLAB2
         {
             string hex = firm1.hexNumber(comboBox3.Text, textBox5.Text);
 
-            MessageBox.Show($"Шестнадцатеричное представление: \n\n{hex}", "Шестнадцатеричное представление поля", 
+            MessageBox.Show($"Шестнадцатеричное представление: \n\n{hex}", "Шестнадцатеричное представление поля",
                 MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
-            
+
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
@@ -235,8 +233,8 @@ namespace FirmTranspLAB2
                     try
                     {
                         Firm firmEx = new Firm("Tesla", value);
-                        MessageBox.Show($"Объект успешно создан: {firmEx}\nМинимальное количество автомобилей: 50", "Успех", 
-                            MessageBoxButtons.OK,MessageBoxIcon.Asterisk);
+                        MessageBox.Show($"Объект успешно создан: {firmEx}\nМинимальное количество автомобилей: 50", "Успех",
+                            MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                         break;
                     }
                     catch (NewException ex)
@@ -263,7 +261,8 @@ namespace FirmTranspLAB2
         private void button12_Click(object sender, EventArgs e)
         {
             string t7 = textBox7.Text;
-            void Ex(string s) {
+            void Ex(string s)
+            {
                 while (true)
                 {
                     if (s.Length == 0)
@@ -275,7 +274,7 @@ namespace FirmTranspLAB2
                     if (firm.CheckOnInt(s))
                     {
                         int val = Convert.ToInt32(s);
-                        MessageBox.Show($"Приведение '{val}' к Int32 успешно произведено!", 
+                        MessageBox.Show($"Приведение '{val}' к Int32 успешно произведено!",
                             "Успех", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                         break;
                     }
@@ -319,9 +318,9 @@ namespace FirmTranspLAB2
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             string selectedState = comboBox1.SelectedItem.ToString();
-           
 
-            
+
+
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
@@ -336,18 +335,18 @@ namespace FirmTranspLAB2
 
         private void button13_Click(object sender, EventArgs e)
         {
-             
+
             collection.PushCollect(textBox1.Text);
             string result = "";
             foreach (var item2 in collection.stack)
             {
                 result += $"Elem in stack: {item2}\n";
-            }   
-                MessageBox.Show(result, "Добавление элементов в стек", MessageBoxButtons.OK,
-                    MessageBoxIcon.Asterisk);
+            }
+            MessageBox.Show(result, "Добавление элементов в стек", MessageBoxButtons.OK,
+                MessageBoxIcon.Asterisk);
 
 
-            
+
         }
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
@@ -363,10 +362,10 @@ namespace FirmTranspLAB2
         private void button14_Click(object sender, EventArgs e)
         {
 
-            
+
             MessageBox.Show(collection.Pop().ToString(), "Удаление элементов стека", MessageBoxButtons.OK,
                     MessageBoxIcon.Asterisk);
-            
+
         }
 
         private void listView1_SelectedIndexChanged_1(object sender, EventArgs e)
@@ -376,13 +375,14 @@ namespace FirmTranspLAB2
 
         private void button15_Click(object sender, EventArgs e)
         {
-            
-            
-            
+
+
+
             ListViewItem item = new ListViewItem(collection.PushArrayTest());
             item.SubItems.Add(collection.PushStackTest());
-            
-            
+            item.SubItems.Add(collection.RandomSelectTest());
+
+
             // Добавление элемента в ListView
             listView1.Items.Add(item);
 
@@ -394,6 +394,11 @@ namespace FirmTranspLAB2
         }
 
         private void listView1_SelectedIndexChanged_2(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label14_Click(object sender, EventArgs e)
         {
 
         }

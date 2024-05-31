@@ -16,7 +16,7 @@ namespace FirmTranspLAB2
     /// <summary>
     /// основной класс программы
     /// </summary>
-    public class Firm
+    public class Firm : IComparable<Firm>
     {
         private double money;
         private int mas;
@@ -27,7 +27,13 @@ namespace FirmTranspLAB2
         private int countTransp;
         static public int countObjects;
 
-        
+
+        public int CompareTo(Firm other)
+        {
+            // Сравнение по количеству автомобилей
+            return CountCar.CompareTo(other.CountCar);
+        }
+
 
         public double Money
         {
@@ -480,6 +486,7 @@ namespace FirmTranspLAB2
 
 
    
+    //Лаба 3 
 
     public delegate void NewCollectionChanged(object sender, EventArgs e);
     class NewCollection
@@ -522,7 +529,7 @@ namespace FirmTranspLAB2
             {
                 firmsForPush[i] = new Firm($"{i + 1}");
             }
-            stopwatch.Reset();
+            stopwatch.Reset(); 
             stopwatch.Start();
             for (int i = 0; i < n; i++)
             {
@@ -531,6 +538,21 @@ namespace FirmTranspLAB2
             stopwatch.Stop();
             return $"Mc 2: {stopwatch.ElapsedMilliseconds}";
         }
+
+        public string RandomSelectTest()
+        {
+            stopwatch.Reset();
+            stopwatch.Start();
+            for (int i = 0; i < n; i++)
+            {
+                int index = rand.Next(0, n); // случайная выборка
+                array2[i] = array[index];
+            }
+            stopwatch.Stop();
+            return $"Mc 3: {stopwatch.ElapsedMilliseconds}";
+        }
+
+
         public string MyCollection()
         {
             stack.Push(firm.ToString());
@@ -559,10 +581,7 @@ namespace FirmTranspLAB2
 
         }
         
-        
-        
        
-
         /// <summary>
         /// функция извлекает первый элемент из стека 
         /// </summary>
@@ -607,53 +626,182 @@ namespace FirmTranspLAB2
         }
     }
 
+    //Лаба 4
 
-    public class CollectionType<T>
+
+    // Обобщенный класс CollectionType<T>
+    class CollectionType<T> : LinkedList<T> where T : IComparable<T>
     {
-        private List<T> elements;
+        public CollectionType() : base() { }
 
-        public CollectionType()
+        public void AddItem(T item)
         {
-            elements = new List<T>();
+            AddLast(item);
         }
 
-        public void AddElement(T element)
+        public void RemoveItem(T item)
         {
-            elements.Add(element);
-        }
-
-        public void RemoveElement(T element)
-        {
-            elements.Remove(element);
-        }
-
-        public void Clear()
-        {
-            elements.Clear();
-        }
-
-        public int Count
-        {
-            get { return elements.Count; }
-        }
-
-        public T this[int index]
-        {
-            get { return elements[index]; }
-            set { elements[index] = value; }
-        }
-
-        public void PrintElements()
-        {
-            foreach (T element in elements)
-            {
-                Console.WriteLine(element);
-            }
-        }
-
-        ~CollectionType()
-        {
-            elements = null;
+            Remove(item);
         }
     }
+
+   
+
+
+    //Лаба 5
+
+
+    // Прототип
+    public abstract class CarPrototype : ICloneable
+    {
+        public abstract object Clone();
+    }
+
+    // Конкретная реализация прототипа
+    public class Car : CarPrototype
+    {
+        public decimal Money { get; set; }
+        public double Mas { get; set; }
+        public string FirmName { get; set; }
+        public int CountCar { get; set; }
+        public int CountWorker { get; set; }
+        public string CarBrand { get; set; }
+        public int CountTransp { get; set; }
+
+        public Car(decimal money, double mas, string firmName, int countCar, int countWorker, string carBrand, int countTransp)
+        {
+            Money = money;
+            Mas = mas;
+            FirmName = firmName;
+            CountCar = countCar;
+            CountWorker = countWorker;
+            CarBrand = carBrand;
+            CountTransp = countTransp;
+        }
+
+        public override object Clone()
+        {
+            return MemberwiseClone();
+        }
+
+        public override string ToString()
+        {
+            return $"Money: {Money}, Mas: {Mas}, FirmName: {FirmName}, CountCar: {CountCar}, CountWorker: {CountWorker}, CarBrand: {CarBrand}, CountTransp: {CountTransp}";
+        }
+    }
+
+
+    //Лаба6
+
+
+    // Абстракция
+    abstract class Car1
+    {
+        protected ICarManufacturer carManufacturer;
+
+        public Car1(ICarManufacturer manufacturer)
+        {
+            carManufacturer = manufacturer;
+        }
+
+        public abstract void ShowDetails();
+    }
+
+    // Реализация абстракции - автомобиль CarA
+    class CarA : Car1
+    {
+        public CarA(ICarManufacturer manufacturer) : base(manufacturer)
+        {
+        }
+
+        public override void ShowDetails()
+        {
+            Console.WriteLine("Car A - Price: $25000, Mass: 1500 kg");
+            carManufacturer.ProduceCar("Car A");
+        }
+    }
+
+    // Реализация абстракции - автомобиль CarB
+    class CarB : Car1
+    {
+        public CarB(ICarManufacturer manufacturer) : base(manufacturer)
+        {
+        }
+
+        public override void ShowDetails()
+        {
+            Console.WriteLine("Car B - Price: $30000, Mass: 2000 kg");
+            carManufacturer.ProduceCar("Car B");
+        }
+    }
+
+    // Интерфейс реализации
+    interface ICarManufacturer
+    {
+        void ProduceCar(string carName);
+    }
+
+    // Реализация интерфейса - производитель автомобилей ManufacturerA
+    class ManufacturerA : ICarManufacturer
+    {
+        public void ProduceCar(string carName)
+        {
+            Console.WriteLine($"Manufacturer A produces {carName}");
+        }
+    }
+
+    // Реализация интерфейса - производитель автомобилей ManufacturerB
+    class ManufacturerB : ICarManufacturer
+    {
+        public void ProduceCar(string carName)
+        {
+            Console.WriteLine($"Manufacturer B produces {carName}");
+        }
+    }
+
+    //Лаба 7
+
+
+    // Интерфейс стратегии для вычисления характеристик автомобиля
+    interface ICarCalculationStrategy
+    {
+        void CalculateAndDisplay(int money, int mas, int countCar, int countWorker, string firmName, string carBrand, int countTransp);
+    }
+
+    // Конкретная стратегия для вычисления суммы денег и массы автомобиля
+    class PriceAndMassCalculationStrategy : ICarCalculationStrategy
+    {
+        public void CalculateAndDisplay(int money, int mas, int countCar, int countWorker, string firmName, string carBrand, int countTransp)
+        {
+            Console.WriteLine($"Price: {money}, Mas: {mas}");
+        }
+    }
+
+    // Конкретная стратегия для вычисления количества автомобилей и работников
+    class CountCarAndWorkerCalculationStrategy : ICarCalculationStrategy
+    {
+        public void CalculateAndDisplay(int money, int mas, int countCar, int countWorker, string firmName, string carBrand, int countTransp)
+        {
+            Console.WriteLine($"Count of cars: {countCar}, Count of workers: {countWorker}");
+        }
+    }
+
+    // Контекст, использующий различные стратегии для вычислений
+    class CarContext
+    {
+        private ICarCalculationStrategy _strategy;
+
+        public void SetStrategy(ICarCalculationStrategy strategy)
+        {
+            _strategy = strategy;
+        }
+
+        public void CalculateAndDisplay(int money, int mas, int countCar, int countWorker, string firmName, string carBrand, int countTransp)
+        {
+            _strategy.CalculateAndDisplay(money, mas, countCar, countWorker, firmName, carBrand, countTransp);
+        }
+    }
+
+
+
 }

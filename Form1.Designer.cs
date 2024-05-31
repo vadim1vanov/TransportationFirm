@@ -28,913 +28,882 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Выполнить = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.button6 = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.button7 = new System.Windows.Forms.Button();
-            this.label10 = new System.Windows.Forms.Label();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.label11 = new System.Windows.Forms.Label();
-            this.button8 = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.button11 = new System.Windows.Forms.Button();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.label14 = new System.Windows.Forms.Label();
-            this.button12 = new System.Windows.Forms.Button();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.label16 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.label13 = new System.Windows.Forms.Label();
-            this.button13 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.label17 = new System.Windows.Forms.Label();
-            this.button14 = new System.Windows.Forms.Button();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.label18 = new System.Windows.Forms.Label();
-            this.button15 = new System.Windows.Forms.Button();
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.panel1.SuspendLayout();
-            this.SuspendLayout();
+            Выполнить = new Button();
+            label4 = new Label();
+            label3 = new Label();
+            button1 = new Button();
+            label2 = new Label();
+            label1 = new Label();
+            panel2 = new Panel();
+            panel3 = new Panel();
+            label5 = new Label();
+            panel5 = new Panel();
+            button3 = new Button();
+            label6 = new Label();
+            panel6 = new Panel();
+            button4 = new Button();
+            label7 = new Label();
+            panel7 = new Panel();
+            button5 = new Button();
+            label8 = new Label();
+            panel4 = new Panel();
+            button6 = new Button();
+            label9 = new Label();
+            panel8 = new Panel();
+            button7 = new Button();
+            label10 = new Label();
+            panel9 = new Panel();
+            label11 = new Label();
+            button8 = new Button();
+            textBox4 = new TextBox();
+            textBox5 = new TextBox();
+            label12 = new Label();
+            panel10 = new Panel();
+            textBox6 = new TextBox();
+            button11 = new Button();
+            panel11 = new Panel();
+            label14 = new Label();
+            button12 = new Button();
+            textBox7 = new TextBox();
+            label15 = new Label();
+            comboBox1 = new ComboBox();
+            comboBox2 = new ComboBox();
+            comboBox3 = new ComboBox();
+            button2 = new Button();
+            button9 = new Button();
+            button10 = new Button();
+            panel1 = new Panel();
+            panel12 = new Panel();
+            label13 = new Label();
+            button13 = new Button();
+            textBox1 = new TextBox();
+            panel13 = new Panel();
+            label17 = new Label();
+            button14 = new Button();
+            panel14 = new Panel();
+            label18 = new Label();
+            button15 = new Button();
+            listView1 = new ListView();
+            panel1.SuspendLayout();
+            SuspendLayout();
             // 
             // Выполнить
             // 
-            this.Выполнить.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Выполнить.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.Выполнить.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Выполнить.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.Выполнить.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MidnightBlue;
-            this.Выполнить.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue;
-            this.Выполнить.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Выполнить.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Выполнить.ForeColor = System.Drawing.Color.White;
-            this.Выполнить.Location = new System.Drawing.Point(1639, 434);
-            this.Выполнить.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Выполнить.Name = "Выполнить";
-            this.Выполнить.Size = new System.Drawing.Size(113, 32);
-            this.Выполнить.TabIndex = 0;
-            this.Выполнить.Text = "Выполнить";
-            this.Выполнить.UseVisualStyleBackColor = false;
-            this.Выполнить.Click += new System.EventHandler(this.button1_Click);
+            Выполнить.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            Выполнить.BackColor = Color.DarkSlateBlue;
+            Выполнить.Cursor = Cursors.Hand;
+            Выполнить.FlatAppearance.BorderColor = Color.White;
+            Выполнить.FlatAppearance.MouseDownBackColor = Color.MidnightBlue;
+            Выполнить.FlatAppearance.MouseOverBackColor = Color.CornflowerBlue;
+            Выполнить.FlatStyle = FlatStyle.Flat;
+            Выполнить.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            Выполнить.ForeColor = Color.White;
+            Выполнить.Location = new Point(888, 434);
+            Выполнить.Margin = new Padding(3, 2, 3, 2);
+            Выполнить.Name = "Выполнить";
+            Выполнить.Size = new Size(113, 32);
+            Выполнить.TabIndex = 0;
+            Выполнить.Text = "Выполнить";
+            Выполнить.UseVisualStyleBackColor = false;
+            Выполнить.Click += button1_Click;
             // 
             // label4
             // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(241, 9);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(1344, 55);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "IVANOV VADIM && GOLOVINOV MIKHAIL 21VP1 LAB 2 OP.8";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            label4.Anchor = AnchorStyles.Top;
+            label4.AutoSize = true;
+            label4.Font = new Font("Microsoft Sans Serif", 36F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.ForeColor = Color.White;
+            label4.Location = new Point(241, 9);
+            label4.Name = "label4";
+            label4.Size = new Size(1344, 55);
+            label4.TabIndex = 6;
+            label4.Text = "IVANOV VADIM && GOLOVINOV MIKHAIL 21VP1 LAB 2 OP.8";
+            label4.Click += label4_Click;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(612, 498);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(200, 21);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Введите значение поля:";
-            this.label3.Click += new System.EventHandler(this.label1_Click);
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.ForeColor = Color.White;
+            label3.Location = new Point(480, 500);
+            label3.Name = "label3";
+            label3.Size = new Size(138, 13);
+            label3.TabIndex = 4;
+            label3.Text = "Введите значение поля:";
+            label3.Click += label1_Click;
             // 
             // button1
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MidnightBlue;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(1639, 492);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(113, 32);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Выполнить";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            button1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button1.BackColor = Color.DarkSlateBlue;
+            button1.Cursor = Cursors.Hand;
+            button1.FlatAppearance.BorderColor = Color.White;
+            button1.FlatAppearance.MouseDownBackColor = Color.MidnightBlue;
+            button1.FlatAppearance.MouseOverBackColor = Color.CornflowerBlue;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            button1.ForeColor = Color.White;
+            button1.Location = new Point(888, 491);
+            button1.Name = "button1";
+            button1.Size = new Size(113, 32);
+            button1.TabIndex = 8;
+            button1.Text = "Выполнить";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click_1;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(68, 500);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(240, 21);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Поле для конвертации в hex:";
-            this.label2.Click += new System.EventHandler(this.label1_Click);
+            label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(68, 500);
+            label2.Name = "label2";
+            label2.Size = new Size(166, 13);
+            label2.TabIndex = 4;
+            label2.Text = "Поле для конвертации в hex:";
+            label2.Click += label1_Click;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(68, 445);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(425, 21);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Поле для вывода значения при реализации метода:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(68, 445);
+            label1.Name = "label1";
+            label1.Size = new Size(294, 13);
+            label1.TabIndex = 4;
+            label1.Text = "Поле для вывода значения при реализации метода:";
+            label1.Click += label1_Click;
             // 
             // panel2
             // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.BackColor = System.Drawing.Color.LightCoral;
-            this.panel2.Location = new System.Drawing.Point(47, 477);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1723, 3);
-            this.panel2.TabIndex = 9;
+            panel2.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            panel2.BackColor = Color.LightCoral;
+            panel2.Location = new Point(47, 477);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(823, 3);
+            panel2.TabIndex = 9;
             // 
             // panel3
             // 
-            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel3.BackColor = System.Drawing.Color.LightCoral;
-            this.panel3.Location = new System.Drawing.Point(47, 533);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1723, 3);
-            this.panel3.TabIndex = 9;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            panel3.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            panel3.BackColor = Color.LightCoral;
+            panel3.Location = new Point(47, 533);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(823, 3);
+            panel3.TabIndex = 9;
+            panel3.Paint += panel3_Paint;
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(68, 390);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(577, 21);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Вывод содержимого полей, через переопределённый метод ToString()";
-            this.label5.Click += new System.EventHandler(this.label1_Click);
+            label5.AutoSize = true;
+            label5.BackColor = Color.Transparent;
+            label5.Font = new Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.ForeColor = Color.White;
+            label5.Location = new Point(68, 390);
+            label5.Name = "label5";
+            label5.Size = new Size(399, 13);
+            label5.TabIndex = 4;
+            label5.Text = "Вывод содержимого полей, через переопределённый метод ToString()";
+            label5.Click += label1_Click;
             // 
             // panel5
             // 
-            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel5.BackColor = System.Drawing.Color.LightCoral;
-            this.panel5.Location = new System.Drawing.Point(47, 421);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1723, 3);
-            this.panel5.TabIndex = 9;
+            panel5.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            panel5.BackColor = Color.LightCoral;
+            panel5.Location = new Point(47, 421);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(823, 3);
+            panel5.TabIndex = 9;
             // 
             // button3
             // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MidnightBlue;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(1639, 383);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(113, 32);
-            this.button3.TabIndex = 10;
-            this.button3.Text = "Выполнить";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            button3.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button3.BackColor = Color.DarkSlateBlue;
+            button3.Cursor = Cursors.Hand;
+            button3.FlatAppearance.BorderColor = Color.White;
+            button3.FlatAppearance.MouseDownBackColor = Color.MidnightBlue;
+            button3.FlatAppearance.MouseOverBackColor = Color.CornflowerBlue;
+            button3.FlatStyle = FlatStyle.Flat;
+            button3.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            button3.ForeColor = Color.White;
+            button3.Location = new Point(888, 379);
+            button3.Name = "button3";
+            button3.Size = new Size(113, 32);
+            button3.TabIndex = 10;
+            button3.Text = "Выполнить";
+            button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(68, 338);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(612, 21);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "Вывод конструктора с количеством параметров, равным количеству полей";
-            this.label6.Click += new System.EventHandler(this.label1_Click);
+            label6.AutoSize = true;
+            label6.BackColor = Color.Transparent;
+            label6.Font = new Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point);
+            label6.ForeColor = Color.White;
+            label6.Location = new Point(68, 338);
+            label6.Name = "label6";
+            label6.Size = new Size(424, 13);
+            label6.TabIndex = 4;
+            label6.Text = "Вывод конструктора с количеством параметров, равным количеству полей";
+            label6.Click += label1_Click;
             // 
             // panel6
             // 
-            this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel6.BackColor = System.Drawing.Color.LightCoral;
-            this.panel6.Location = new System.Drawing.Point(45, 369);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1723, 3);
-            this.panel6.TabIndex = 9;
+            panel6.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            panel6.BackColor = Color.LightCoral;
+            panel6.Location = new Point(45, 369);
+            panel6.Name = "panel6";
+            panel6.Size = new Size(823, 3);
+            panel6.TabIndex = 9;
             // 
             // button4
             // 
-            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button4.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MidnightBlue;
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(1639, 327);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(113, 32);
-            this.button4.TabIndex = 11;
-            this.button4.Text = "Выполнить";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            button4.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button4.BackColor = Color.DarkSlateBlue;
+            button4.Cursor = Cursors.Hand;
+            button4.FlatAppearance.BorderColor = Color.White;
+            button4.FlatAppearance.MouseDownBackColor = Color.MidnightBlue;
+            button4.FlatAppearance.MouseOverBackColor = Color.CornflowerBlue;
+            button4.FlatStyle = FlatStyle.Flat;
+            button4.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            button4.ForeColor = Color.White;
+            button4.Location = new Point(888, 327);
+            button4.Name = "button4";
+            button4.Size = new Size(113, 32);
+            button4.TabIndex = 11;
+            button4.Text = "Выполнить";
+            button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(68, 281);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(350, 21);
-            this.label7.TabIndex = 4;
-            this.label7.Text = "Вывод конструктора с двумя параметрами";
-            this.label7.Click += new System.EventHandler(this.label1_Click);
+            label7.AutoSize = true;
+            label7.BackColor = Color.Transparent;
+            label7.Font = new Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point);
+            label7.ForeColor = Color.White;
+            label7.Location = new Point(68, 281);
+            label7.Name = "label7";
+            label7.Size = new Size(243, 13);
+            label7.TabIndex = 4;
+            label7.Text = "Вывод конструктора с двумя параметрами";
+            label7.Click += label1_Click;
             // 
             // panel7
             // 
-            this.panel7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel7.BackColor = System.Drawing.Color.LightCoral;
-            this.panel7.Location = new System.Drawing.Point(45, 312);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1723, 3);
-            this.panel7.TabIndex = 9;
+            panel7.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            panel7.BackColor = Color.LightCoral;
+            panel7.Location = new Point(45, 312);
+            panel7.Name = "panel7";
+            panel7.Size = new Size(823, 3);
+            panel7.TabIndex = 9;
             // 
             // button5
             // 
-            this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button5.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MidnightBlue;
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(1639, 270);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(113, 32);
-            this.button5.TabIndex = 12;
-            this.button5.Text = "Выполнить";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            button5.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button5.BackColor = Color.DarkSlateBlue;
+            button5.Cursor = Cursors.Hand;
+            button5.FlatAppearance.BorderColor = Color.White;
+            button5.FlatAppearance.MouseDownBackColor = Color.MidnightBlue;
+            button5.FlatAppearance.MouseOverBackColor = Color.CornflowerBlue;
+            button5.FlatStyle = FlatStyle.Flat;
+            button5.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            button5.ForeColor = Color.White;
+            button5.Location = new Point(888, 270);
+            button5.Name = "button5";
+            button5.Size = new Size(113, 32);
+            button5.TabIndex = 12;
+            button5.Text = "Выполнить";
+            button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
             // 
             // label8
             // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(68, 225);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(344, 21);
-            this.label8.TabIndex = 4;
-            this.label8.Text = "Вывод конструктора с одним параметром";
-            this.label8.Click += new System.EventHandler(this.label1_Click);
+            label8.AutoSize = true;
+            label8.BackColor = Color.Transparent;
+            label8.Font = new Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point);
+            label8.ForeColor = Color.White;
+            label8.Location = new Point(68, 225);
+            label8.Name = "label8";
+            label8.Size = new Size(240, 13);
+            label8.TabIndex = 4;
+            label8.Text = "Вывод конструктора с одним параметром";
+            label8.Click += label1_Click;
             // 
             // panel4
             // 
-            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel4.BackColor = System.Drawing.Color.LightCoral;
-            this.panel4.Location = new System.Drawing.Point(45, 256);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1723, 3);
-            this.panel4.TabIndex = 9;
+            panel4.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            panel4.BackColor = Color.LightCoral;
+            panel4.Location = new Point(45, 256);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(823, 3);
+            panel4.TabIndex = 9;
             // 
             // button6
             // 
-            this.button6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button6.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button6.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MidnightBlue;
-            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(1639, 214);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(113, 32);
-            this.button6.TabIndex = 13;
-            this.button6.Text = "Выполнить";
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            button6.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button6.BackColor = Color.DarkSlateBlue;
+            button6.Cursor = Cursors.Hand;
+            button6.FlatAppearance.BorderColor = Color.White;
+            button6.FlatAppearance.MouseDownBackColor = Color.MidnightBlue;
+            button6.FlatAppearance.MouseOverBackColor = Color.CornflowerBlue;
+            button6.FlatStyle = FlatStyle.Flat;
+            button6.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            button6.ForeColor = Color.White;
+            button6.Location = new Point(888, 213);
+            button6.Name = "button6";
+            button6.Size = new Size(113, 32);
+            button6.TabIndex = 13;
+            button6.Text = "Выполнить";
+            button6.UseVisualStyleBackColor = false;
+            button6.Click += button6_Click;
             // 
             // label9
             // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(68, 170);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(304, 21);
-            this.label9.TabIndex = 4;
-            this.label9.Text = "Вывод конструктора без параметров";
-            this.label9.Click += new System.EventHandler(this.label1_Click);
+            label9.AutoSize = true;
+            label9.BackColor = Color.Transparent;
+            label9.Font = new Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point);
+            label9.ForeColor = Color.White;
+            label9.Location = new Point(68, 170);
+            label9.Name = "label9";
+            label9.Size = new Size(210, 13);
+            label9.TabIndex = 4;
+            label9.Text = "Вывод конструктора без параметров";
+            label9.Click += label1_Click;
             // 
             // panel8
             // 
-            this.panel8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel8.BackColor = System.Drawing.Color.LightCoral;
-            this.panel8.Location = new System.Drawing.Point(51, 198);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(1723, 3);
-            this.panel8.TabIndex = 9;
+            panel8.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            panel8.BackColor = Color.LightCoral;
+            panel8.Location = new Point(51, 198);
+            panel8.Name = "panel8";
+            panel8.Size = new Size(823, 3);
+            panel8.TabIndex = 9;
             // 
             // button7
             // 
-            this.button7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button7.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button7.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MidnightBlue;
-            this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Location = new System.Drawing.Point(1639, 159);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(113, 32);
-            this.button7.TabIndex = 14;
-            this.button7.Text = "Выполнить";
-            this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            button7.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button7.BackColor = Color.DarkSlateBlue;
+            button7.Cursor = Cursors.Hand;
+            button7.FlatAppearance.BorderColor = Color.White;
+            button7.FlatAppearance.MouseDownBackColor = Color.MidnightBlue;
+            button7.FlatAppearance.MouseOverBackColor = Color.CornflowerBlue;
+            button7.FlatStyle = FlatStyle.Flat;
+            button7.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            button7.ForeColor = Color.White;
+            button7.Location = new Point(888, 159);
+            button7.Name = "button7";
+            button7.Size = new Size(113, 32);
+            button7.TabIndex = 14;
+            button7.Text = "Выполнить";
+            button7.UseVisualStyleBackColor = false;
+            button7.Click += button7_Click;
             // 
             // label10
             // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(68, 104);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(257, 21);
-            this.label10.TabIndex = 4;
-            this.label10.Text = "Название поля для изменения:";
-            this.label10.Click += new System.EventHandler(this.label1_Click);
+            label10.AutoSize = true;
+            label10.BackColor = Color.Transparent;
+            label10.Font = new Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point);
+            label10.ForeColor = Color.White;
+            label10.Location = new Point(68, 104);
+            label10.Name = "label10";
+            label10.Size = new Size(177, 13);
+            label10.TabIndex = 4;
+            label10.Text = "Название поля для изменения:";
+            label10.Click += label1_Click;
             // 
             // panel9
             // 
-            this.panel9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel9.BackColor = System.Drawing.Color.LightCoral;
-            this.panel9.Location = new System.Drawing.Point(51, 140);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(1723, 3);
-            this.panel9.TabIndex = 9;
+            panel9.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            panel9.BackColor = Color.LightCoral;
+            panel9.Location = new Point(51, 140);
+            panel9.Name = "panel9";
+            panel9.Size = new Size(823, 3);
+            panel9.TabIndex = 9;
             // 
             // label11
             // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(662, 104);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(200, 21);
-            this.label11.TabIndex = 4;
-            this.label11.Text = "Введите значение поля:";
-            this.label11.Click += new System.EventHandler(this.label1_Click);
+            label11.AutoSize = true;
+            label11.BackColor = Color.Transparent;
+            label11.Font = new Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point);
+            label11.ForeColor = Color.White;
+            label11.Location = new Point(497, 101);
+            label11.Name = "label11";
+            label11.Size = new Size(138, 13);
+            label11.TabIndex = 4;
+            label11.Text = "Введите значение поля:";
+            label11.Click += label1_Click;
             // 
             // button8
             // 
-            this.button8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button8.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button8.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MidnightBlue;
-            this.button8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Location = new System.Drawing.Point(1639, 101);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(113, 32);
-            this.button8.TabIndex = 17;
-            this.button8.Text = "Выполнить";
-            this.button8.UseVisualStyleBackColor = false;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
+            button8.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button8.BackColor = Color.DarkSlateBlue;
+            button8.Cursor = Cursors.Hand;
+            button8.FlatAppearance.BorderColor = Color.White;
+            button8.FlatAppearance.MouseDownBackColor = Color.MidnightBlue;
+            button8.FlatAppearance.MouseOverBackColor = Color.CornflowerBlue;
+            button8.FlatStyle = FlatStyle.Flat;
+            button8.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            button8.ForeColor = Color.White;
+            button8.Location = new Point(888, 93);
+            button8.Name = "button8";
+            button8.Size = new Size(113, 32);
+            button8.TabIndex = 17;
+            button8.Text = "Выполнить";
+            button8.UseVisualStyleBackColor = false;
+            button8.Click += button8_Click;
             // 
             // textBox4
             // 
-            this.textBox4.BackColor = System.Drawing.SystemColors.Info;
-            this.textBox4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox4.Location = new System.Drawing.Point(903, 101);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(182, 29);
-            this.textBox4.TabIndex = 18;
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged_1);
+            textBox4.BackColor = SystemColors.Info;
+            textBox4.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            textBox4.Location = new Point(641, 95);
+            textBox4.Margin = new Padding(3, 2, 3, 2);
+            textBox4.Name = "textBox4";
+            textBox4.Size = new Size(182, 29);
+            textBox4.TabIndex = 18;
+            textBox4.TextChanged += textBox4_TextChanged_1;
             // 
             // textBox5
             // 
-            this.textBox5.BackColor = System.Drawing.SystemColors.Info;
-            this.textBox5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox5.Location = new System.Drawing.Point(877, 494);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(182, 29);
-            this.textBox5.TabIndex = 19;
-            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
+            textBox5.BackColor = SystemColors.Info;
+            textBox5.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            textBox5.Location = new Point(624, 491);
+            textBox5.Margin = new Padding(3, 2, 3, 2);
+            textBox5.Name = "textBox5";
+            textBox5.Size = new Size(182, 29);
+            textBox5.TabIndex = 19;
+            textBox5.TextChanged += textBox5_TextChanged;
             // 
             // label12
             // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(68, 554);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(595, 21);
-            this.label12.TabIndex = 4;
-            this.label12.Text = "Обработка исключений Op1.     Введите количество автомобилей фирмы:";
-            this.label12.Click += new System.EventHandler(this.label1_Click);
+            label12.AutoSize = true;
+            label12.BackColor = Color.Transparent;
+            label12.Font = new Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point);
+            label12.ForeColor = Color.White;
+            label12.Location = new Point(68, 554);
+            label12.Name = "label12";
+            label12.Size = new Size(414, 13);
+            label12.TabIndex = 4;
+            label12.Text = "Обработка исключений Op1.     Введите количество автомобилей фирмы:";
+            label12.Click += label1_Click;
             // 
             // panel10
             // 
-            this.panel10.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel10.BackColor = System.Drawing.Color.LightCoral;
-            this.panel10.Location = new System.Drawing.Point(47, 587);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(1723, 3);
-            this.panel10.TabIndex = 9;
-            this.panel10.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            panel10.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            panel10.BackColor = Color.LightCoral;
+            panel10.Location = new Point(47, 587);
+            panel10.Name = "panel10";
+            panel10.Size = new Size(823, 3);
+            panel10.TabIndex = 9;
+            panel10.Paint += panel3_Paint;
             // 
             // textBox6
             // 
-            this.textBox6.BackColor = System.Drawing.SystemColors.Info;
-            this.textBox6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox6.Location = new System.Drawing.Point(797, 550);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(182, 29);
-            this.textBox6.TabIndex = 20;
-            this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
+            textBox6.BackColor = SystemColors.Info;
+            textBox6.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            textBox6.Location = new Point(497, 545);
+            textBox6.Margin = new Padding(3, 2, 3, 2);
+            textBox6.Name = "textBox6";
+            textBox6.Size = new Size(182, 29);
+            textBox6.TabIndex = 20;
+            textBox6.TextChanged += textBox6_TextChanged;
             // 
             // button11
             // 
-            this.button11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button11.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.button11.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button11.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button11.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MidnightBlue;
-            this.button11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button11.ForeColor = System.Drawing.Color.White;
-            this.button11.Location = new System.Drawing.Point(1639, 548);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(113, 32);
-            this.button11.TabIndex = 21;
-            this.button11.Text = "Выполнить";
-            this.button11.UseVisualStyleBackColor = false;
-            this.button11.Click += new System.EventHandler(this.button11_Click);
+            button11.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button11.BackColor = Color.DarkSlateBlue;
+            button11.Cursor = Cursors.Hand;
+            button11.FlatAppearance.BorderColor = Color.White;
+            button11.FlatAppearance.MouseDownBackColor = Color.MidnightBlue;
+            button11.FlatAppearance.MouseOverBackColor = Color.CornflowerBlue;
+            button11.FlatStyle = FlatStyle.Flat;
+            button11.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            button11.ForeColor = Color.White;
+            button11.Location = new Point(888, 545);
+            button11.Name = "button11";
+            button11.Size = new Size(113, 32);
+            button11.TabIndex = 21;
+            button11.Text = "Выполнить";
+            button11.UseVisualStyleBackColor = false;
+            button11.Click += button11_Click;
             // 
             // panel11
             // 
-            this.panel11.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel11.BackColor = System.Drawing.Color.LightCoral;
-            this.panel11.Location = new System.Drawing.Point(47, 637);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(1723, 3);
-            this.panel11.TabIndex = 23;
+            panel11.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            panel11.BackColor = Color.LightCoral;
+            panel11.Location = new Point(47, 637);
+            panel11.Name = "panel11";
+            panel11.Size = new Size(823, 3);
+            panel11.TabIndex = 23;
             // 
             // label14
             // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(68, 607);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(510, 21);
-            this.label14.TabIndex = 22;
-            this.label14.Text = "Обработка исключений Op2.   Переопределённое исключение";
+            label14.AutoSize = true;
+            label14.BackColor = Color.Transparent;
+            label14.Font = new Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point);
+            label14.ForeColor = Color.White;
+            label14.Location = new Point(68, 607);
+            label14.Name = "label14";
+            label14.Size = new Size(352, 13);
+            label14.TabIndex = 22;
+            label14.Text = "Обработка исключений Op2.   Переопределённое исключение";
+            label14.Click += label14_Click;
             // 
             // button12
             // 
-            this.button12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button12.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.button12.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button12.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button12.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MidnightBlue;
-            this.button12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue;
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button12.ForeColor = System.Drawing.Color.White;
-            this.button12.Location = new System.Drawing.Point(1639, 600);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(113, 32);
-            this.button12.TabIndex = 24;
-            this.button12.Text = "Выполнить";
-            this.button12.UseVisualStyleBackColor = false;
-            this.button12.Click += new System.EventHandler(this.button12_Click);
+            button12.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button12.BackColor = Color.DarkSlateBlue;
+            button12.Cursor = Cursors.Hand;
+            button12.FlatAppearance.BorderColor = Color.White;
+            button12.FlatAppearance.MouseDownBackColor = Color.MidnightBlue;
+            button12.FlatAppearance.MouseOverBackColor = Color.CornflowerBlue;
+            button12.FlatStyle = FlatStyle.Flat;
+            button12.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            button12.ForeColor = Color.White;
+            button12.Location = new Point(888, 596);
+            button12.Name = "button12";
+            button12.Size = new Size(113, 32);
+            button12.TabIndex = 24;
+            button12.Text = "Выполнить";
+            button12.UseVisualStyleBackColor = false;
+            button12.Click += button12_Click;
             // 
             // textBox7
             // 
-            this.textBox7.BackColor = System.Drawing.SystemColors.Info;
-            this.textBox7.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox7.Location = new System.Drawing.Point(768, 603);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(134, 29);
-            this.textBox7.TabIndex = 25;
-            this.textBox7.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
+            textBox7.BackColor = SystemColors.Info;
+            textBox7.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            textBox7.Location = new Point(564, 598);
+            textBox7.Margin = new Padding(3, 2, 3, 2);
+            textBox7.Name = "textBox7";
+            textBox7.Size = new Size(134, 29);
+            textBox7.TabIndex = 25;
+            textBox7.TextChanged += textBox7_TextChanged;
             // 
             // label15
             // 
-            this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.Color.Transparent;
-            this.label15.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(619, 611);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(114, 21);
-            this.label15.TabIndex = 27;
-            this.label15.Text = "из string в int";
+            label15.AutoSize = true;
+            label15.BackColor = Color.Transparent;
+            label15.Font = new Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point);
+            label15.ForeColor = Color.White;
+            label15.Location = new Point(480, 607);
+            label15.Name = "label15";
+            label15.Size = new Size(78, 13);
+            label15.TabIndex = 27;
+            label15.Text = "из string в int";
             // 
             // comboBox1
             // 
-            this.comboBox1.BackColor = System.Drawing.SystemColors.Info;
-            this.comboBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(378, 105);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(228, 28);
-            this.comboBox1.TabIndex = 28;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            comboBox1.BackColor = SystemColors.Info;
+            comboBox1.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(254, 96);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(228, 28);
+            comboBox1.TabIndex = 28;
+            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // comboBox2
             // 
-            this.comboBox2.BackColor = System.Drawing.SystemColors.Info;
-            this.comboBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(589, 442);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(228, 28);
-            this.comboBox2.TabIndex = 29;
-            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            comboBox2.BackColor = SystemColors.Info;
+            comboBox2.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            comboBox2.FormattingEnabled = true;
+            comboBox2.Location = new Point(589, 442);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new Size(228, 28);
+            comboBox2.TabIndex = 29;
+            comboBox2.SelectedIndexChanged += comboBox2_SelectedIndexChanged;
             // 
             // comboBox3
             // 
-            this.comboBox3.BackColor = System.Drawing.SystemColors.Info;
-            this.comboBox3.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(359, 495);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(232, 28);
-            this.comboBox3.TabIndex = 30;
-            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
+            comboBox3.BackColor = SystemColors.Info;
+            comboBox3.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            comboBox3.FormattingEnabled = true;
+            comboBox3.Location = new Point(241, 494);
+            comboBox3.Name = "comboBox3";
+            comboBox3.Size = new Size(232, 28);
+            comboBox3.TabIndex = 30;
+            comboBox3.SelectedIndexChanged += comboBox3_SelectedIndexChanged;
             // 
             // button2
             // 
-            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.button2.BackColor = System.Drawing.Color.Crimson;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(827, 32);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(174, 54);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "ВЫЙТИ";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            button2.Anchor = AnchorStyles.Bottom;
+            button2.BackColor = Color.Crimson;
+            button2.Cursor = Cursors.Hand;
+            button2.FlatAppearance.BorderColor = Color.White;
+            button2.FlatAppearance.MouseDownBackColor = Color.Maroon;
+            button2.FlatAppearance.MouseOverBackColor = Color.FromArgb(255, 128, 128);
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            button2.ForeColor = Color.White;
+            button2.Location = new Point(827, 32);
+            button2.Margin = new Padding(3, 2, 3, 2);
+            button2.Name = "button2";
+            button2.Size = new Size(174, 54);
+            button2.TabIndex = 2;
+            button2.Text = "ВЫЙТИ";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // button9
             // 
-            this.button9.BackColor = System.Drawing.Color.SlateBlue;
-            this.button9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button9.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button9.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MidnightBlue;
-            this.button9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button9.ForeColor = System.Drawing.Color.Transparent;
-            this.button9.Location = new System.Drawing.Point(151, 30);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(112, 62);
-            this.button9.TabIndex = 9;
-            this.button9.Text = "Количество созданных объектов";
-            this.button9.UseVisualStyleBackColor = false;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
+            button9.BackColor = Color.SlateBlue;
+            button9.Cursor = Cursors.Hand;
+            button9.FlatAppearance.BorderColor = Color.Black;
+            button9.FlatAppearance.MouseDownBackColor = Color.MidnightBlue;
+            button9.FlatAppearance.MouseOverBackColor = Color.CornflowerBlue;
+            button9.FlatStyle = FlatStyle.Flat;
+            button9.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            button9.ForeColor = Color.Transparent;
+            button9.Location = new Point(151, 30);
+            button9.Name = "button9";
+            button9.Size = new Size(112, 62);
+            button9.TabIndex = 9;
+            button9.Text = "Количество созданных объектов";
+            button9.UseVisualStyleBackColor = false;
+            button9.Click += button9_Click;
             // 
             // button10
             // 
-            this.button10.BackColor = System.Drawing.Color.SlateBlue;
-            this.button10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button10.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button10.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MidnightBlue;
-            this.button10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button10.ForeColor = System.Drawing.Color.White;
-            this.button10.Location = new System.Drawing.Point(22, 30);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(112, 62);
-            this.button10.TabIndex = 20;
-            this.button10.Text = "Посмотреть наименования полей класса";
-            this.button10.UseVisualStyleBackColor = false;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
-            // 
-            // label16
-            // 
-            this.label16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.label16.AutoSize = true;
-            this.label16.BackColor = System.Drawing.Color.Transparent;
-            this.label16.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(1507, 79);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(318, 21);
-            this.label16.TabIndex = 28;
-            this.label16.Text = "© Ivanov Vadim  && Golovinov Mikhail 2023";
-            this.label16.Click += new System.EventHandler(this.label16_Click);
+            button10.BackColor = Color.SlateBlue;
+            button10.Cursor = Cursors.Hand;
+            button10.FlatAppearance.BorderColor = Color.Black;
+            button10.FlatAppearance.MouseDownBackColor = Color.MidnightBlue;
+            button10.FlatAppearance.MouseOverBackColor = Color.CornflowerBlue;
+            button10.FlatStyle = FlatStyle.Flat;
+            button10.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            button10.ForeColor = Color.White;
+            button10.Location = new Point(22, 30);
+            button10.Name = "button10";
+            button10.Size = new Size(112, 62);
+            button10.TabIndex = 20;
+            button10.Text = "Посмотреть наименования полей класса";
+            button10.UseVisualStyleBackColor = false;
+            button10.Click += button10_Click;
             // 
             // panel1
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.panel1.Controls.Add(this.label16);
-            this.panel1.Controls.Add(this.button10);
-            this.panel1.Controls.Add(this.button9);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Location = new System.Drawing.Point(0, 891);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1828, 115);
-            this.panel1.TabIndex = 5;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            panel1.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            panel1.BackColor = Color.DarkSlateBlue;
+            panel1.Controls.Add(button10);
+            panel1.Controls.Add(button9);
+            panel1.Controls.Add(button2);
+            panel1.Location = new Point(0, 891);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1828, 115);
+            panel1.TabIndex = 5;
+            panel1.Paint += panel1_Paint;
             // 
             // panel12
             // 
-            this.panel12.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel12.BackColor = System.Drawing.Color.LightCoral;
-            this.panel12.Location = new System.Drawing.Point(47, 691);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(1723, 3);
-            this.panel12.TabIndex = 32;
+            panel12.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            panel12.BackColor = Color.LightCoral;
+            panel12.Location = new Point(47, 691);
+            panel12.Name = "panel12";
+            panel12.Size = new Size(823, 3);
+            panel12.TabIndex = 32;
             // 
             // label13
             // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(68, 661);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(263, 21);
-            this.label13.TabIndex = 31;
-            this.label13.Text = "Добавить элемент в коллекцию";
+            label13.AutoSize = true;
+            label13.BackColor = Color.Transparent;
+            label13.Font = new Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point);
+            label13.ForeColor = Color.White;
+            label13.Location = new Point(68, 661);
+            label13.Name = "label13";
+            label13.Size = new Size(183, 13);
+            label13.TabIndex = 31;
+            label13.Text = "Добавить элемент в коллекцию";
             // 
             // button13
             // 
-            this.button13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button13.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.button13.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button13.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button13.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MidnightBlue;
-            this.button13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue;
-            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button13.ForeColor = System.Drawing.Color.White;
-            this.button13.Location = new System.Drawing.Point(1639, 653);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(113, 32);
-            this.button13.TabIndex = 33;
-            this.button13.Text = "Выполнить";
-            this.button13.UseVisualStyleBackColor = false;
-            this.button13.Click += new System.EventHandler(this.button13_Click);
+            button13.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button13.BackColor = Color.DarkSlateBlue;
+            button13.Cursor = Cursors.Hand;
+            button13.FlatAppearance.BorderColor = Color.White;
+            button13.FlatAppearance.MouseDownBackColor = Color.MidnightBlue;
+            button13.FlatAppearance.MouseOverBackColor = Color.CornflowerBlue;
+            button13.FlatStyle = FlatStyle.Flat;
+            button13.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            button13.ForeColor = Color.White;
+            button13.Location = new Point(888, 650);
+            button13.Name = "button13";
+            button13.Size = new Size(113, 32);
+            button13.TabIndex = 33;
+            button13.Text = "Выполнить";
+            button13.UseVisualStyleBackColor = false;
+            button13.Click += button13_Click;
             // 
             // textBox1
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Info;
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(349, 655);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(182, 29);
-            this.textBox1.TabIndex = 35;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged_4);
+            textBox1.BackColor = SystemColors.Info;
+            textBox1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            textBox1.Location = new Point(257, 652);
+            textBox1.Margin = new Padding(3, 2, 3, 2);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(182, 29);
+            textBox1.TabIndex = 35;
+            textBox1.TextChanged += textBox1_TextChanged_4;
             // 
             // panel13
             // 
-            this.panel13.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel13.BackColor = System.Drawing.Color.LightCoral;
-            this.panel13.Location = new System.Drawing.Point(47, 744);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(1723, 3);
-            this.panel13.TabIndex = 37;
+            panel13.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            panel13.BackColor = Color.LightCoral;
+            panel13.Location = new Point(47, 744);
+            panel13.Name = "panel13";
+            panel13.Size = new Size(823, 3);
+            panel13.TabIndex = 37;
             // 
             // label17
             // 
-            this.label17.AutoSize = true;
-            this.label17.BackColor = System.Drawing.Color.Transparent;
-            this.label17.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label17.ForeColor = System.Drawing.Color.White;
-            this.label17.Location = new System.Drawing.Point(68, 714);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(210, 21);
-            this.label17.TabIndex = 36;
-            this.label17.Text = "Удалить элемент из стека";
+            label17.AutoSize = true;
+            label17.BackColor = Color.Transparent;
+            label17.Font = new Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point);
+            label17.ForeColor = Color.White;
+            label17.Location = new Point(68, 714);
+            label17.Name = "label17";
+            label17.Size = new Size(145, 13);
+            label17.TabIndex = 36;
+            label17.Text = "Удалить элемент из стека";
             // 
             // button14
             // 
-            this.button14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button14.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.button14.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button14.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button14.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MidnightBlue;
-            this.button14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue;
-            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button14.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button14.ForeColor = System.Drawing.Color.White;
-            this.button14.Location = new System.Drawing.Point(1639, 707);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(113, 32);
-            this.button14.TabIndex = 39;
-            this.button14.Text = "Выполнить";
-            this.button14.UseVisualStyleBackColor = false;
-            this.button14.Click += new System.EventHandler(this.button14_Click);
+            button14.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button14.BackColor = Color.DarkSlateBlue;
+            button14.Cursor = Cursors.Hand;
+            button14.FlatAppearance.BorderColor = Color.White;
+            button14.FlatAppearance.MouseDownBackColor = Color.MidnightBlue;
+            button14.FlatAppearance.MouseOverBackColor = Color.CornflowerBlue;
+            button14.FlatStyle = FlatStyle.Flat;
+            button14.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            button14.ForeColor = Color.White;
+            button14.Location = new Point(888, 703);
+            button14.Name = "button14";
+            button14.Size = new Size(113, 32);
+            button14.TabIndex = 39;
+            button14.Text = "Выполнить";
+            button14.UseVisualStyleBackColor = false;
+            button14.Click += button14_Click;
             // 
             // panel14
             // 
-            this.panel14.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel14.BackColor = System.Drawing.Color.LightCoral;
-            this.panel14.Location = new System.Drawing.Point(51, 882);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(1723, 3);
-            this.panel14.TabIndex = 41;
+            panel14.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            panel14.BackColor = Color.LightCoral;
+            panel14.Location = new Point(51, 882);
+            panel14.Name = "panel14";
+            panel14.Size = new Size(823, 3);
+            panel14.TabIndex = 41;
             // 
             // label18
             // 
-            this.label18.AutoSize = true;
-            this.label18.BackColor = System.Drawing.Color.Transparent;
-            this.label18.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label18.ForeColor = System.Drawing.Color.White;
-            this.label18.Location = new System.Drawing.Point(68, 811);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(381, 21);
-            this.label18.TabIndex = 40;
-            this.label18.Text = "Вывод замера производительности на вставку";
+            label18.AutoSize = true;
+            label18.BackColor = Color.Transparent;
+            label18.Font = new Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point);
+            label18.ForeColor = Color.White;
+            label18.Location = new Point(68, 811);
+            label18.Name = "label18";
+            label18.Size = new Size(262, 13);
+            label18.TabIndex = 40;
+            label18.Text = "Вывод замера производительности на вставку";
             // 
             // button15
             // 
-            this.button15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button15.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.button15.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button15.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button15.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MidnightBlue;
-            this.button15.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue;
-            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button15.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button15.ForeColor = System.Drawing.Color.White;
-            this.button15.Location = new System.Drawing.Point(1639, 800);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(113, 32);
-            this.button15.TabIndex = 42;
-            this.button15.Text = "Выполнить";
-            this.button15.UseVisualStyleBackColor = false;
-            this.button15.Click += new System.EventHandler(this.button15_Click);
+            button15.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button15.BackColor = Color.DarkSlateBlue;
+            button15.Cursor = Cursors.Hand;
+            button15.FlatAppearance.BorderColor = Color.White;
+            button15.FlatAppearance.MouseDownBackColor = Color.MidnightBlue;
+            button15.FlatAppearance.MouseOverBackColor = Color.CornflowerBlue;
+            button15.FlatStyle = FlatStyle.Flat;
+            button15.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            button15.ForeColor = Color.White;
+            button15.Location = new Point(888, 811);
+            button15.Name = "button15";
+            button15.Size = new Size(113, 32);
+            button15.TabIndex = 42;
+            button15.Text = "Выполнить";
+            button15.UseVisualStyleBackColor = false;
+            button15.Click += button15_Click;
             // 
             // listView1
             // 
-            this.listView1.BackColor = System.Drawing.SystemColors.Info;
-            this.listView1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.listView1.Location = new System.Drawing.Point(480, 753);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(959, 123);
-            this.listView1.TabIndex = 43;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.List;
-            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged_2);
+            listView1.BackColor = SystemColors.Info;
+            listView1.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            listView1.Location = new Point(343, 753);
+            listView1.Name = "listView1";
+            listView1.Size = new Size(480, 123);
+            listView1.TabIndex = 43;
+            listView1.UseCompatibleStateImageBehavior = false;
+            listView1.View = View.List;
+            listView1.SelectedIndexChanged += listView1_SelectedIndexChanged_2;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Crimson;
-            this.ClientSize = new System.Drawing.Size(1827, 1000);
-            this.Controls.Add(this.listView1);
-            this.Controls.Add(this.button15);
-            this.Controls.Add(this.panel14);
-            this.Controls.Add(this.label18);
-            this.Controls.Add(this.button14);
-            this.Controls.Add(this.panel13);
-            this.Controls.Add(this.label17);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button13);
-            this.Controls.Add(this.panel12);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.label15);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.button12);
-            this.Controls.Add(this.panel11);
-            this.Controls.Add(this.label14);
-            this.Controls.Add(this.button11);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.panel10);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel9);
-            this.Controls.Add(this.panel8);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel7);
-            this.Controls.Add(this.panel6);
-            this.Controls.Add(this.panel5);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.Выполнить);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Crimson;
+            ClientSize = new Size(1827, 1000);
+            Controls.Add(listView1);
+            Controls.Add(button15);
+            Controls.Add(panel14);
+            Controls.Add(label18);
+            Controls.Add(button14);
+            Controls.Add(panel13);
+            Controls.Add(label17);
+            Controls.Add(textBox1);
+            Controls.Add(button13);
+            Controls.Add(panel12);
+            Controls.Add(label13);
+            Controls.Add(panel1);
+            Controls.Add(comboBox3);
+            Controls.Add(comboBox2);
+            Controls.Add(comboBox1);
+            Controls.Add(label15);
+            Controls.Add(textBox7);
+            Controls.Add(button12);
+            Controls.Add(panel11);
+            Controls.Add(label14);
+            Controls.Add(button11);
+            Controls.Add(textBox6);
+            Controls.Add(textBox5);
+            Controls.Add(textBox4);
+            Controls.Add(button8);
+            Controls.Add(button7);
+            Controls.Add(button6);
+            Controls.Add(button5);
+            Controls.Add(button4);
+            Controls.Add(button3);
+            Controls.Add(panel10);
+            Controls.Add(panel3);
+            Controls.Add(panel9);
+            Controls.Add(panel8);
+            Controls.Add(panel4);
+            Controls.Add(panel7);
+            Controls.Add(panel6);
+            Controls.Add(panel5);
+            Controls.Add(panel2);
+            Controls.Add(label11);
+            Controls.Add(label10);
+            Controls.Add(label9);
+            Controls.Add(label8);
+            Controls.Add(label7);
+            Controls.Add(label6);
+            Controls.Add(label5);
+            Controls.Add(label1);
+            Controls.Add(button1);
+            Controls.Add(label12);
+            Controls.Add(label2);
+            Controls.Add(Выполнить);
+            Controls.Add(label4);
+            Controls.Add(label3);
+            Margin = new Padding(3, 2, 3, 2);
+            Name = "Form1";
+            Load += Form1_Load;
+            panel1.ResumeLayout(false);
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -983,7 +952,6 @@
         private Button button2;
         private Button button9;
         private Button button10;
-        private Label label16;
         private Panel panel1;
         private Panel panel12;
         private Label label13;
