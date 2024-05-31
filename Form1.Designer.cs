@@ -84,6 +84,9 @@
             label18 = new Label();
             button15 = new Button();
             listView1 = new ListView();
+            label16 = new Label();
+            panel15 = new Panel();
+            button16 = new Button();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -839,12 +842,56 @@
             listView1.View = View.List;
             listView1.SelectedIndexChanged += listView1_SelectedIndexChanged_2;
             // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.BackColor = Color.Transparent;
+            label16.Font = new Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point);
+            label16.ForeColor = Color.White;
+            label16.Location = new Point(1118, 107);
+            label16.Name = "label16";
+            label16.Size = new Size(82, 13);
+            label16.TabIndex = 44;
+            label16.Text = "LINQ запросы";
+            label16.Click += label16_Click_1;
+            // 
+            // panel15
+            // 
+            panel15.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            panel15.BackColor = Color.LightCoral;
+            panel15.Location = new Point(1051, 140);
+            panel15.Name = "panel15";
+            panel15.Size = new Size(723, 3);
+            panel15.TabIndex = 45;
+            // 
+            // button16
+            // 
+            button16.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button16.BackColor = Color.DarkSlateBlue;
+            button16.Cursor = Cursors.Hand;
+            button16.FlatAppearance.BorderColor = Color.White;
+            button16.FlatAppearance.MouseDownBackColor = Color.MidnightBlue;
+            button16.FlatAppearance.MouseOverBackColor = Color.CornflowerBlue;
+            button16.FlatStyle = FlatStyle.Flat;
+            button16.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            button16.ForeColor = Color.White;
+            button16.Location = new Point(1516, 96);
+            button16.Name = "button16";
+            button16.Size = new Size(113, 32);
+            button16.TabIndex = 46;
+            button16.Text = "Выполнить";
+            button16.UseVisualStyleBackColor = false;
+            button16.Click += button16_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Crimson;
             ClientSize = new Size(1827, 1000);
+            Controls.Add(button16);
+            Controls.Add(panel15);
+            Controls.Add(label16);
             Controls.Add(listView1);
             Controls.Add(button15);
             Controls.Add(panel14);
@@ -964,5 +1011,8 @@
         private Label label18;
         private Button button15;
         private ListView listView1;
+        private Label label16;
+        private Panel panel15;
+        private Button button16;
     }
 }

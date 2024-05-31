@@ -58,7 +58,7 @@ namespace FirmTranspLAB2
             listView1.Columns.Add("Вставка Array", 160, HorizontalAlignment.Center);
             listView1.Columns.Add("Вставка Stack", 160, HorizontalAlignment.Center);
             listView1.Columns.Add("Случаный порядок", 160, HorizontalAlignment.Center);
-            
+
 
         }
 
@@ -401,6 +401,36 @@ namespace FirmTranspLAB2
         private void label14_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void label16_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+
+            // Создание коллекции объектов CollectionType<Firm>
+            CollectionType<Firm> collection = new CollectionType<Firm>();
+
+            // Добавление объектов в коллекцию
+            collection.AddItem(new Firm { Money = 10000, Mas = 2000, FirmName = "Firm1", CountCar = 50, CountWorker = 100, CarBrand = "Brand1", CountTransp = 500 });
+            collection.AddItem(new Firm { Money = 20000, Mas = 2500, FirmName = "Firm2", CountCar = 70, CountWorker = 120, CarBrand = "Brand2", CountTransp = 600 });
+            collection.AddItem(new Firm { Money = 15000, Mas = 2200, FirmName = "Firm3", CountCar = 60, CountWorker = 90, CarBrand = "Brand3", CountTransp = 550 });
+
+          
+            // LINQ-запросы
+            int n = 60; // Размер коллекции для поиска
+            var collectionSizeN = collection.Where(firm => firm.CountCar == n).ToList();
+
+            var maxCollection = collection.Max();
+            var minCollection = collection.Min();
+
+         
+            MessageBox.Show($"Максимальная коллекция по количеству автомобилей: {maxCollection.FirmName}\n " +
+                $"Минимальная коллекция по количеству автомобилей: {minCollection.FirmName}", "LINQ", MessageBoxButtons.OK,
+                    MessageBoxIcon.Asterisk);
         }
     }
 }
