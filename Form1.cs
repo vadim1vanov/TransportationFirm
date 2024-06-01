@@ -419,7 +419,7 @@ namespace FirmTranspLAB2
             collection.AddItem(new Firm { Money = 20000, Mas = 2500, FirmName = "Firm2", CountCar = 70, CountWorker = 120, CarBrand = "Brand2", CountTransp = 600 });
             collection.AddItem(new Firm { Money = 15000, Mas = 2200, FirmName = "Firm3", CountCar = 60, CountWorker = 90, CarBrand = "Brand3", CountTransp = 550 });
 
-          
+
             // LINQ-запросы
             int n = 60; // Размер коллекции для поиска
             var collectionSizeN = collection.Where(firm => firm.CountCar == n).ToList();
@@ -427,9 +427,31 @@ namespace FirmTranspLAB2
             var maxCollection = collection.Max();
             var minCollection = collection.Min();
 
-         
+
             MessageBox.Show($"Максимальная коллекция по количеству автомобилей: {maxCollection.FirmName}\n " +
                 $"Минимальная коллекция по количеству автомобилей: {minCollection.FirmName}", "LINQ", MessageBoxButtons.OK,
+                    MessageBoxIcon.Asterisk);
+        }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+            Car prototype = new Car(10000, 1200, "Toyota", 100, 50, "Toyota Camry", 200);
+           
+
+            // Клонирование прототипа
+            Car clone1 = (Car)prototype.Clone();
+            clone1.Money = 15000;
+            clone1.CarBrand = "Toyota Corolla";
+            clone1.CountCar = 120;
+           
+            Car clone2 = (Car)prototype.Clone();
+            clone2.FirmName = "Ford";
+            clone2.CountWorker = 70;
+           
+
+            MessageBox.Show($"Прототип: {prototype}\n\n" +
+                $"Клон 1: {clone1}\n\n " +
+                $"Клон 2: {clone2}", "Прототип", MessageBoxButtons.OK,
                     MessageBoxIcon.Asterisk);
         }
     }
