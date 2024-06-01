@@ -90,6 +90,12 @@
             button17 = new Button();
             panel16 = new Panel();
             label19 = new Label();
+            panel17 = new Panel();
+            label20 = new Label();
+            button18 = new Button();
+            panel18 = new Panel();
+            label21 = new Label();
+            button19 = new Button();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -926,12 +932,99 @@
             label19.TabIndex = 49;
             label19.Text = "Паттерн прототип";
             // 
+            // panel17
+            // 
+            panel17.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            panel17.BackColor = Color.LightCoral;
+            panel17.Location = new Point(1124, 256);
+            panel17.Name = "panel17";
+            panel17.Size = new Size(623, 3);
+            panel17.TabIndex = 50;
+            // 
+            // label20
+            // 
+            label20.AutoSize = true;
+            label20.BackColor = Color.Transparent;
+            label20.Font = new Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point);
+            label20.ForeColor = Color.White;
+            label20.Location = new Point(1144, 225);
+            label20.Name = "label20";
+            label20.Size = new Size(80, 13);
+            label20.TabIndex = 51;
+            label20.Text = "Паттерн мост";
+            // 
+            // button18
+            // 
+            button18.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button18.BackColor = Color.DarkSlateBlue;
+            button18.Cursor = Cursors.Hand;
+            button18.FlatAppearance.BorderColor = Color.White;
+            button18.FlatAppearance.MouseDownBackColor = Color.MidnightBlue;
+            button18.FlatAppearance.MouseOverBackColor = Color.CornflowerBlue;
+            button18.FlatStyle = FlatStyle.Flat;
+            button18.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            button18.ForeColor = Color.White;
+            button18.Location = new Point(1592, 214);
+            button18.Name = "button18";
+            button18.Size = new Size(113, 32);
+            button18.TabIndex = 52;
+            button18.Text = "Выполнить";
+            button18.UseVisualStyleBackColor = false;
+            button18.Click += button18_Click;
+            // 
+            // panel18
+            // 
+            panel18.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            panel18.BackColor = Color.LightCoral;
+            panel18.Location = new Point(1124, 312);
+            panel18.Name = "panel18";
+            panel18.Size = new Size(623, 3);
+            panel18.TabIndex = 53;
+            // 
+            // label21
+            // 
+            label21.AutoSize = true;
+            label21.BackColor = Color.Transparent;
+            label21.Font = new Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point);
+            label21.ForeColor = Color.White;
+            label21.Location = new Point(1144, 281);
+            label21.Name = "label21";
+            label21.Size = new Size(108, 13);
+            label21.TabIndex = 54;
+            label21.Text = "Паттерн Стратегия";
+            label21.Click += label21_Click;
+            // 
+            // button19
+            // 
+            button19.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button19.BackColor = Color.DarkSlateBlue;
+            button19.Cursor = Cursors.Hand;
+            button19.FlatAppearance.BorderColor = Color.White;
+            button19.FlatAppearance.MouseDownBackColor = Color.MidnightBlue;
+            button19.FlatAppearance.MouseOverBackColor = Color.CornflowerBlue;
+            button19.FlatStyle = FlatStyle.Flat;
+            button19.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            button19.ForeColor = Color.White;
+            button19.Location = new Point(1592, 270);
+            button19.Name = "button19";
+            button19.Size = new Size(113, 32);
+            button19.TabIndex = 55;
+            button19.Text = "Выполнить";
+            button19.UseVisualStyleBackColor = false;
+            button19.Click += button19_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Crimson;
             ClientSize = new Size(1827, 1000);
+            Controls.Add(button19);
+            Controls.Add(label21);
+            Controls.Add(panel18);
+            Controls.Add(button18);
+            Controls.Add(label20);
+            Controls.Add(panel17);
             Controls.Add(label19);
             Controls.Add(panel16);
             Controls.Add(button17);
@@ -1064,5 +1157,11 @@
         private Button button17;
         private Panel panel16;
         private Label label19;
+        private Panel panel17;
+        private Label label20;
+        private Button button18;
+        private Panel panel18;
+        private Label label21;
+        private Button button19;
     }
 }

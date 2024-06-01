@@ -7,6 +7,7 @@ using System.Diagnostics;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Runtime.InteropServices;
+using System.Windows.Forms;
 
 
 
@@ -704,7 +705,7 @@ namespace FirmTranspLAB2
             carManufacturer = manufacturer;
         }
 
-        public abstract void ShowDetails();
+        public abstract string ShowDetails();
     }
 
     // Реализация абстракции - автомобиль CarA
@@ -714,10 +715,9 @@ namespace FirmTranspLAB2
         {
         }
 
-        public override void ShowDetails()
+        public override string ShowDetails()
         {
-            Console.WriteLine("Car A - Price: $25000, Mass: 1500 kg");
-            carManufacturer.ProduceCar("Car A");
+            return carManufacturer.ProduceCar("Car A");
         }
     }
 
@@ -728,36 +728,89 @@ namespace FirmTranspLAB2
         {
         }
 
-        public override void ShowDetails()
+        public override string ShowDetails()
         {
-            Console.WriteLine("Car B - Price: $30000, Mass: 2000 kg");
-            carManufacturer.ProduceCar("Car B");
+            return carManufacturer.ProduceCar("Car B");
         }
     }
 
     // Интерфейс реализации
     interface ICarManufacturer
     {
-        void ProduceCar(string carName);
+        string ProduceCar(string carName);
     }
 
     // Реализация интерфейса - производитель автомобилей ManufacturerA
     class ManufacturerA : ICarManufacturer
     {
-        public void ProduceCar(string carName)
+        public string ProduceCar(string carName)
         {
-            Console.WriteLine($"Manufacturer A produces {carName}");
+            return $"Производитель {carName}";
         }
     }
 
     // Реализация интерфейса - производитель автомобилей ManufacturerB
     class ManufacturerB : ICarManufacturer
     {
-        public void ProduceCar(string carName)
+        public string ProduceCar(string carName)
         {
-            Console.WriteLine($"Manufacturer B produces {carName}");
+            return $"Производитель {carName}";
         }
     }
+
+
+
+
+    interface IFirm
+    {
+        string ShowInformation();
+    }
+
+    class Firma : IFirm
+    {
+        protected int Money;
+        protected int Mas;
+        protected string FirmName;
+        protected int CountCar;
+        protected int CountWorker;
+        protected string CarBrand;
+        protected int CountTransp;
+
+        public Firma(int money, int mas, string firmName, int countCar, int countWorker, string carBrand, int countTransp)
+        {
+            Money = money;
+            Mas = mas;
+            FirmName = firmName;
+            CountCar = countCar;
+            CountWorker = countWorker;
+            CarBrand = carBrand;
+            CountTransp = countTransp;
+        }
+
+        public virtual string ShowInformation()
+        {
+            return $"Firm: {FirmName}";
+        }
+    }
+
+    class MoneyAttribute : IFirm
+    {
+        private int _money;
+
+        public MoneyAttribute(int money)
+        {
+            _money = money;
+        }
+
+        public string ShowInformation()
+        {
+            return $"Money: {_money}";
+        }
+    }
+
+
+
+
 
     //Лаба 7
 
@@ -765,24 +818,24 @@ namespace FirmTranspLAB2
     // Интерфейс стратегии для вычисления характеристик автомобиля
     interface ICarCalculationStrategy
     {
-        void CalculateAndDisplay(int money, int mas, int countCar, int countWorker, string firmName, string carBrand, int countTransp);
+        string CalculateAndDisplay(int money, int mas, int countCar, int countWorker, string firmName, string carBrand, int countTransp);
     }
 
     // Конкретная стратегия для вычисления суммы денег и массы автомобиля
     class PriceAndMassCalculationStrategy : ICarCalculationStrategy
     {
-        public void CalculateAndDisplay(int money, int mas, int countCar, int countWorker, string firmName, string carBrand, int countTransp)
+        public string CalculateAndDisplay(int money, int mas, int countCar, int countWorker, string firmName, string carBrand, int countTransp)
         {
-            Console.WriteLine($"Price: {money}, Mas: {mas}");
+            return $"Price: {money}, Mas: {mas}";
         }
     }
 
     // Конкретная стратегия для вычисления количества автомобилей и работников
     class CountCarAndWorkerCalculationStrategy : ICarCalculationStrategy
     {
-        public void CalculateAndDisplay(int money, int mas, int countCar, int countWorker, string firmName, string carBrand, int countTransp)
+        public string CalculateAndDisplay(int money, int mas, int countCar, int countWorker, string firmName, string carBrand, int countTransp)
         {
-            Console.WriteLine($"Count of cars: {countCar}, Count of workers: {countWorker}");
+           return $"Count of cars: {countCar}, Count of workers: {countWorker}";
         }
     }
 
@@ -796,9 +849,9 @@ namespace FirmTranspLAB2
             _strategy = strategy;
         }
 
-        public void CalculateAndDisplay(int money, int mas, int countCar, int countWorker, string firmName, string carBrand, int countTransp)
+        public string CalculateAndDisplay(int money, int mas, int countCar, int countWorker, string firmName, string carBrand, int countTransp)
         {
-            _strategy.CalculateAndDisplay(money, mas, countCar, countWorker, firmName, carBrand, countTransp);
+            return _strategy.CalculateAndDisplay(money, mas, countCar, countWorker, firmName, carBrand, countTransp);
         }
     }
 

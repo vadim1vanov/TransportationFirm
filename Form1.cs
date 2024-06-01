@@ -436,22 +436,67 @@ namespace FirmTranspLAB2
         private void button17_Click(object sender, EventArgs e)
         {
             Car prototype = new Car(10000, 1200, "Toyota", 100, 50, "Toyota Camry", 200);
-           
+
 
             // Клонирование прототипа
             Car clone1 = (Car)prototype.Clone();
             clone1.Money = 15000;
             clone1.CarBrand = "Toyota Corolla";
             clone1.CountCar = 120;
-           
+
             Car clone2 = (Car)prototype.Clone();
             clone2.FirmName = "Ford";
             clone2.CountWorker = 70;
-           
+
+
 
             MessageBox.Show($"Прототип: {prototype}\n\n" +
                 $"Клон 1: {clone1}\n\n " +
                 $"Клон 2: {clone2}", "Прототип", MessageBoxButtons.OK,
+                    MessageBoxIcon.Asterisk);
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+
+
+            ICarManufacturer manufacturerA = new ManufacturerA();
+            ICarManufacturer manufacturerB = new ManufacturerB();
+
+            Car1 carA = new CarA(manufacturerA);
+            Car1 carB = new CarB(manufacturerB);
+
+            
+            
+
+            MessageBox.Show($"СarA: {carA.ShowDetails()} \n " +
+                $"СarB: {carB.ShowDetails()}", "Мост", MessageBoxButtons.OK,
+                    MessageBoxIcon.Asterisk);
+
+
+        }
+
+        private void label21_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+CarContext context = new CarContext();
+
+            ICarCalculationStrategy strategy1 = new PriceAndMassCalculationStrategy();
+            ICarCalculationStrategy strategy2 = new CountCarAndWorkerCalculationStrategy();
+
+            context.SetStrategy(strategy1);
+            context.CalculateAndDisplay(25000, 1500, 100, 50, "Firm A", "Brand A", 200);
+            MessageBox.Show($"{context.CalculateAndDisplay(25000, 1500, 100, 50, "Firm A", "Brand A", 200)}\n " 
+                , "Стратегия", MessageBoxButtons.OK,
+                    MessageBoxIcon.Asterisk);
+
+
+            context.SetStrategy(strategy2);
+            MessageBox.Show($"{context.CalculateAndDisplay(25000, 1500, 100, 50, "Firm A", "Brand A", 200)}", "Стратегия", MessageBoxButtons.OK,
                     MessageBoxIcon.Asterisk);
         }
     }
